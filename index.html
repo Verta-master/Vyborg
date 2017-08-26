@@ -11,9 +11,9 @@
     <div class="header__top">
       <div class="wrapper">
         <div class="header__info">
-          <time datetime="2017-07-05T12:37:00+03:00" class="date">5 июля, среда 12:37</time>
-          <p class="currency">USD <span>59,58</span></p>
-          <p class="currency">EUR <span>67,30</span></p>
+          <time datetime="2017-07-05T12:37:00+03:00" class="header__date">5 июля, среда 12:37</time>
+          <p class="header__currency">USD <span>59,58</span></p>
+          <p class="header__currency">EUR <span>67,30</span></p>
         </div>
         <ul class="social">
           <li class="social__item">
@@ -48,8 +48,8 @@
           </li>
         </ul>
         <div class="user">
-          <a href="#" class="user__link">Вход</a>
-          <a href="#" class="user__link">Регистрация</a>
+          <a href="#" class="user__link"><span>Вход</span></a>
+          <a href="#" class="user__link"><span>Регистрация</span></a>
         </div>
       </div>
     </div>
@@ -58,13 +58,13 @@
         <img src="img/logo.png" alt="Газета Выборг" class="logo__img" width="340" height="150">
       </div>
       <div class="banner">
-        <a href="#" class="banner__link">
-          <img src="img/banner__header.png" alt="Реклама" class="banner__img banner__img--header" width="464" height="86">
+        <a href="#" class="banner__link banner__link--header">
+          <img src="img/banner-header.jpg" alt="Реклама" class="banner__img" width="460" height="85">
         </a>
       </div>
       <a href="#" class="new-issue">Свежий выпуск</a>
       <form action="#" method="get" class="push">
-        <input type="checkbox" name="push" id="push" class="push__checkbox" checked>
+        <input type="checkbox" name="push" id="push" class="push__checkbox">
         <label for="push" class="push__label">Включить уведомления</label>
         <p class="push__info">Теперь вы можете сохранять понравившиеся вам новости, для того чтобы прочесть их позже.</p>
       </form>
@@ -73,28 +73,33 @@
       <div class="wrapper">
         <ul class="menu__list">
           <li class="menu__item">
-            <a href="#" class="menu__link">Новости</a>
+            <a class="menu__link menu__link--active"><span>Новости</span></a>
           </li>
           <li class="menu__item">
-            <a href="#" class="menu__link">Статьи</a>
+            <a href="#" class="menu__link"><span>Статьи</span></a>
           </li>
           <li class="menu__item">
-            <a href="#" class="menu__link">Афиша</a>
+            <a href="#" class="menu__link"><span>Афиша</span></a>
           </li>
           <li class="menu__item">
-            <a href="#" class="menu__link">Туристу</a>
+            <a href="#" class="menu__link"><span>Туристу</span></a>
           </li>
           <li class="menu__item">
-            <a href="#" class="menu__link">Спецпроекты</a>
+            <a href="#" class="menu__link"><span>Спецпроекты</span></a>
           </li>
           <li class="menu__item">
-            <a href="#" class="menu__link">О нас</a>
+            <a href="#" class="menu__link"><span>О нас</span></a>
           </li>
         </ul>
-        <a href="#" class="arxiv-link menu__link"></a>
+        <a href="#" class="menu__link menu__arxiv"><span>Архив</span></a>
         <form action="#" method="get" class="search">
           <input type="text" name="search" id="search" class="search__input" placeholder="Поиск по сайту">
-          <button type="submit" class="search__btn"><span class="visually-hidden">Искать</span></button>
+          <button type="submit" class="search__btn">
+            <span class="visually-hidden">Искать</span>
+            <svg class="search__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20.78 20.78">
+              <path class="search__fill" d="M1194.63,167.26l-7.66,7.66M1206,162.53a6.69,6.69,0,1,1-6.69-6.69A6.69,6.69,0,0,1,1206,162.53Z" transform="translate(-1186.27 -154.84)"/>
+            </svg>
+          </button>
         </form>
       </div>
     </nav>
@@ -103,166 +108,252 @@
   <main>
     <section class="news">
       <h1 class="visually-hidden">Новости</h1>
-      <ul class="news__list">
-        <li class="news__item news__item--main">
-          <p class="news__top">
-            <span class="news__category">Общество</span>
-            <time datetime="2017-07-14T18:30:00+03:00" class="news__time">14.07.2017, 18:30</time>
-            <button class="news__flag"><span class="visually-hidden">Выбрать новость</span></button>
-          </p>
+      <article class="news__item news__item--main">
+        <p class="news__top">
+          <span class="news__category">Общество</span>
+          <time datetime="2017-07-14T18:30:00+03:00" class="news__time">14.07.2017, 18:30</time>
+          <button class="news__flag">
+            <span class="visually-hidden">Выбрать новость</span>
+            <svg class="news__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21.14 14">
+              <polygon class="news__fill" points="19 13 1 13 1 1 19 1 14 7 19 13"/>
+            </svg>
+          </button>
+        </p>
+        <a href="#" class="news__link">
           <div class="news__picture">
             <img src="img/news-1.jpg" alt="Коневский монастырь" class="news__img" width="1024" height="768">
             <p class="news__number">№ 70</p>
           </div>
           <h2 class="news__title">Владимир Путин вновь посетил Коневский монастырь Военные курсы в гражданских вузах освободят от призыва.</h2>
           <p class="news__text">Спасательные раскопки каменного могильника в окрестностях Копорья завершила Ижорско-Лужская археологическая экспедиция музея-усадьбы Н.К. Рериха. Захоронения относятся к I тысячелетию нашей эры. Сделаны они по обряду сожжения и трупоположения в каменных оградках и на булыжной вымостке. Погребение относится к культуре каменных могильников, распространенной на территории Эстонии и северной Латвии. Отдельные ее памятники, открытые в период с 1980 по 2010 гг., известны и на западе Ленинградской области. Сделаны они по обряду</p>
-        </li>
+        </a>
+      </article>
+      <ul class="news__list news__list--half">
         <li class="news__item">
           <p class="news__top">
             <span class="news__category">Образование</span>
             <time datetime="2017-07-14T18:30:00+03:00" class="news__time">14.07.2017, 18:30</time>
-            <button class="news__flag"><span class="visually-hidden">Выбрать новость</span></button>
+            <button class="news__flag">
+              <span class="visually-hidden">Выбрать новость</span>
+              <svg class="news__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21.14 14">
+                <polygon class="news__fill" points="19 13 1 13 1 1 19 1 14 7 19 13"/>
+              </svg>
+            </button>
           </p>
-          <div class="news__picture">
-            <img src="img/news-2.jpg" alt="Новость" class="news__img" width="260" height="130">
-            <p class="news__number">№ 70</p>
-          </div>
-          <h2 class="news__title">Военные курсы в гражданских вузах освободят от призыва.</h2>
-          <p class="news__text">Военные курсы в гражданских вузах освободят от призыва.</p>
+          <a href="#" class="news__link">
+            <div class="news__picture">
+              <img src="img/news-2.jpg" alt="Новость" class="news__img" width="260" height="130">
+              <p class="news__number">№ 70</p>
+            </div>
+            <h2 class="news__title">Военные курсы в гражданских вузах освободят от призыва.</h2>
+            <p class="news__text">Военные курсы в гражданских вузах освободят от призыва.</p>
+          </a>
         </li>
         <li class="news__item">
           <p class="news__top">
             <span class="news__category">Закон и порядок</span>
             <time datetime="2017-07-14T18:30:00+03:00" class="news__time">14.07.2017, 18:30</time>
-            <button class="news__flag"><span class="visually-hidden">Выбрать новость</span></button>
+            <button class="news__flag">
+              <span class="visually-hidden">Выбрать новость</span>
+              <svg class="news__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21.14 14">
+                <polygon class="news__fill" points="19 13 1 13 1 1 19 1 14 7 19 13"/>
+              </svg>
+            </button>
           </p>
-          <div class="news__picture">
-            <img src="img/news-3.jpg" alt="Новость" class="news__img" width="260" height="130">
-            <p class="news__number">№ 70</p>
-          </div>
-          <h2 class="news__title">Незаконная раздача земель может ударить чиновнику по карьере.</h2>
-          <p class="news__text">Незаконная раздача земель может ударить чиновнику по карьере.</p>
+          <a href="#" class="news__link">
+            <div class="news__picture">
+              <img src="img/news-3.jpg" alt="Новость" class="news__img" width="260" height="130">
+              <p class="news__number">№ 70</p>
+            </div>
+            <h2 class="news__title">Незаконная раздача земель может ударить чиновнику по карьере.</h2>
+            <p class="news__text">Незаконная раздача земель может ударить чиновнику по карьере.</p>
+          </a>
         </li>
         <li class="news__item">
           <p class="news__top">
             <span class="news__category">Образование</span>
             <time datetime="2017-07-14T18:30:00+03:00" class="news__time">14.07.2017, 18:30</time>
-            <button class="news__flag"><span class="visually-hidden">Выбрать новость</span></button>
+            <button class="news__flag">
+              <span class="visually-hidden">Выбрать новость</span>
+              <svg class="news__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21.14 14">
+                <polygon class="news__fill" points="19 13 1 13 1 1 19 1 14 7 19 13"/>
+              </svg>
+            </button>
           </p>
-          <div class="news__picture">
-            <img src="img/news-4.jpg" alt="Новость" class="news__img" width="260" height="130">
-            <p class="news__number">№ 70</p>
-          </div>
-          <h2 class="news__title">Военные курсы в гражданских вузах освободят от призыва.</h2>
-          <p class="news__text">Военные курсы в гражданских вузах освободят от призыва.</p>
+          <a href="#" class="news__link">
+            <div class="news__picture">
+              <img src="img/news-4.jpg" alt="Новость" class="news__img" width="260" height="130">
+              <p class="news__number">№ 70</p>
+            </div>
+            <h2 class="news__title">Военные курсы в гражданских вузах освободят от призыва.</h2>
+            <p class="news__text">Военные курсы в гражданских вузах освободят от призыва.</p>
+          </a>
         </li>
         <li class="news__item">
           <p class="news__top">
             <span class="news__category">Закон и порядок</span>
             <time datetime="2017-07-14T18:30:00+03:00" class="news__time">14.07.2017, 18:30</time>
-            <button class="news__flag"><span class="visually-hidden">Выбрать новость</span></button>
+            <button class="news__flag">
+              <span class="visually-hidden">Выбрать новость</span>
+              <svg class="news__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21.14 14">
+                <polygon class="news__fill" points="19 13 1 13 1 1 19 1 14 7 19 13"/>
+              </svg>
+            </button>
           </p>
-          <div class="news__picture">
-            <img src="img/news-5.jpg" alt="Новость" class="news__img" width="260" height="130">
-            <p class="news__number">№ 70</p>
-          </div>
-          <h2 class="news__title">Незаконная раздача земель может ударить чиновнику по карьере.</h2>
-          <p class="news__text">Незаконная раздача земель может ударить чиновнику по карьере.</p>
+          <a href="#" class="news__link">
+            <div class="news__picture">
+              <img src="img/news-5.jpg" alt="Новость" class="news__img" width="260" height="130">
+              <p class="news__number">№ 70</p>
+            </div>
+            <h2 class="news__title">Незаконная раздача земель может ударить чиновнику по карьере.</h2>
+            <p class="news__text">Незаконная раздача земель может ударить чиновнику по карьере.</p>
+          </a>
         </li>
+      </ul>
+      <ul class="news__list news__list--full">
         <li class="news__item">
           <p class="news__top">
             <span class="news__category">Образование</span>
             <time datetime="2017-07-14T18:30:00+03:00" class="news__time">14.07.2017, 18:30</time>
-            <button class="news__flag"><span class="visually-hidden">Выбрать новость</span></button>
+            <button class="news__flag">
+              <span class="visually-hidden">Выбрать новость</span>
+              <svg class="news__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21.14 14">
+                <polygon class="news__fill" points="19 13 1 13 1 1 19 1 14 7 19 13"/>
+              </svg>
+            </button>
           </p>
-          <div class="news__picture">
-            <img src="img/news-6.jpg" alt="Новость" class="news__img" width="260" height="130">
-            <p class="news__number">№ 70</p>
-          </div>
-          <h2 class="news__title">Военные курсы в гражданских вузах освободят от призыва.</h2>
-          <p class="news__text">Военные курсы в гражданских вузах освободят от призыва.</p>
+          <a href="#" class="news__link">
+            <div class="news__picture">
+              <img src="img/news-6.jpg" alt="Новость" class="news__img" width="260" height="130">
+              <p class="news__number">№ 70</p>
+            </div>
+            <h2 class="news__title">Военные курсы в гражданских вузах освободят от призыва.</h2>
+            <p class="news__text">Военные курсы в гражданских вузах освободят от призыва.</p>
+          </a>
         </li>
         <li class="news__item">
           <p class="news__top">
             <span class="news__category">Закон и порядок</span>
             <time datetime="2017-07-14T18:30:00+03:00" class="news__time">14.07.2017, 18:30</time>
-            <button class="news__flag"><span class="visually-hidden">Выбрать новость</span></button>
+            <button class="news__flag">
+              <span class="visually-hidden">Выбрать новость</span>
+              <svg class="news__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21.14 14">
+                <polygon class="news__fill" points="19 13 1 13 1 1 19 1 14 7 19 13"/>
+              </svg>
+            </button>
           </p>
-          <div class="news__picture">
-            <img src="img/news-7.jpg" alt="Новость" class="news__img" width="260" height="130">
-            <p class="news__number">№ 70</p>
-          </div>
-          <h2 class="news__title">Незаконная раздача земель может ударить чиновнику по карьере.</h2>
-          <p class="news__text">Незаконная раздача земель может ударить чиновнику по карьере.</p>
+          <a href="#" class="news__link">
+            <div class="news__picture">
+              <img src="img/news-7.jpg" alt="Новость" class="news__img" width="260" height="130">
+              <p class="news__number">№ 70</p>
+            </div>
+            <h2 class="news__title">Незаконная раздача земель может ударить чиновнику по карьере.</h2>
+            <p class="news__text">Незаконная раздача земель может ударить чиновнику по карьере.</p>
+          </a>
         </li>
         <li class="news__item">
           <p class="news__top">
             <span class="news__category">Образование</span>
             <time datetime="2017-07-14T18:30:00+03:00" class="news__time">14.07.2017, 18:30</time>
-            <button class="news__flag"><span class="visually-hidden">Выбрать новость</span></button>
+            <button class="news__flag">
+              <span class="visually-hidden">Выбрать новость</span>
+              <svg class="news__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21.14 14">
+                <polygon class="news__fill" points="19 13 1 13 1 1 19 1 14 7 19 13"/>
+              </svg>
+            </button>
           </p>
-          <div class="news__picture">
-            <img src="img/news-8.jpg" alt="Новость" class="news__img" width="260" height="130">
-            <p class="news__number">№ 70</p>
-          </div>
-          <h2 class="news__title">Военные курсы в гражданских вузах освободят от призыва.</h2>
-          <p class="news__text">Военные курсы в гражданских вузах освободят от призыва.</p>
+          <a href="#" class="news__link">
+            <div class="news__picture">
+              <img src="img/news-8.jpg" alt="Новость" class="news__img" width="260" height="130">
+              <p class="news__number">№ 70</p>
+            </div>
+            <h2 class="news__title">Военные курсы в гражданских вузах освободят от призыва.</h2>
+            <p class="news__text">Военные курсы в гражданских вузах освободят от призыва.</p>
+          </a>
         </li>
         <li class="news__item">
           <p class="news__top">
             <span class="news__category">Закон и порядок</span>
             <time datetime="2017-07-14T18:30:00+03:00" class="news__time">14.07.2017, 18:30</time>
-            <button class="news__flag"><span class="visually-hidden">Выбрать новость</span></button>
+            <button class="news__flag">
+              <span class="visually-hidden">Выбрать новость</span>
+              <svg class="news__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21.14 14">
+                <polygon class="news__fill" points="19 13 1 13 1 1 19 1 14 7 19 13"/>
+              </svg>
+            </button>
           </p>
-          <div class="news__picture">
-            <img src="img/news-9.jpg" alt="Новость" class="news__img" width="260" height="130">
-            <p class="news__number">№ 70</p>
-          </div>
-          <h2 class="news__title">Незаконная раздача земель может ударить чиновнику по карьере.</h2>
-          <p class="news__text">Незаконная раздача земель может ударить чиновнику по карьере.</p>
+          <a href="#" class="news__link">
+            <div class="news__picture">
+              <img src="img/news-9.jpg" alt="Новость" class="news__img" width="260" height="130">
+              <p class="news__number">№ 70</p>
+            </div>
+            <h2 class="news__title">Незаконная раздача земель может ударить чиновнику по карьере.</h2>
+            <p class="news__text">Незаконная раздача земель может ударить чиновнику по карьере.</p>
+          </a>
         </li>
         <li class="news__item">
           <p class="news__top">
             <span class="news__category">Образование</span>
             <time datetime="2017-07-14T18:30:00+03:00" class="news__time">14.07.2017, 18:30</time>
-            <button class="news__flag"><span class="visually-hidden">Выбрать новость</span></button>
+            <button class="news__flag">
+              <span class="visually-hidden">Выбрать новость</span>
+              <svg class="news__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21.14 14">
+                <polygon class="news__fill" points="19 13 1 13 1 1 19 1 14 7 19 13"/>
+              </svg>
+            </button>
           </p>
-          <div class="news__picture">
-            <img src="img/news-6.jpg" alt="Новость" class="news__img" width="260" height="130">
-            <p class="news__number">№ 70</p>
-          </div>
-          <h2 class="news__title">Военные курсы в гражданских вузах освободят от призыва.</h2>
-          <p class="news__text">Военные курсы в гражданских вузах освободят от призыва.</p>
+          <a href="#" class="news__link">
+            <div class="news__picture">
+              <img src="img/news-6.jpg" alt="Новость" class="news__img" width="260" height="130">
+              <p class="news__number">№ 70</p>
+            </div>
+            <h2 class="news__title">Военные курсы в гражданских вузах освободят от призыва.</h2>
+            <p class="news__text">Военные курсы в гражданских вузах освободят от призыва.</p>
+          </a>
         </li>
         <li class="news__item">
           <p class="news__top">
             <span class="news__category">Закон и порядок</span>
             <time datetime="2017-07-14T18:30:00+03:00" class="news__time">14.07.2017, 18:30</time>
-            <button class="news__flag"><span class="visually-hidden">Выбрать новость</span></button>
+            <button class="news__flag">
+              <span class="visually-hidden">Выбрать новость</span>
+              <svg class="news__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21.14 14">
+                <polygon class="news__fill" points="19 13 1 13 1 1 19 1 14 7 19 13"/>
+              </svg>
+            </button>
           </p>
-          <div class="news__picture">
-            <img src="img/news-7.jpg" alt="Новость" class="news__img" width="260" height="130">
-            <p class="news__number">№ 70</p>
-          </div>
-          <h2 class="news__title">Незаконная раздача земель может ударить чиновнику по карьере.</h2>
-          <p class="news__text">Незаконная раздача земель может ударить чиновнику по карьере.</p>
+          <a href="#" class="news__link">
+            <div class="news__picture">
+              <img src="img/news-7.jpg" alt="Новость" class="news__img" width="260" height="130">
+              <p class="news__number">№ 70</p>
+            </div>
+            <h2 class="news__title">Незаконная раздача земель может ударить чиновнику по карьере.</h2>
+            <p class="news__text">Незаконная раздача земель может ударить чиновнику по карьере.</p>
+          </a>
         </li>
         <li class="news__item">
           <p class="news__top">
             <span class="news__category">Образование</span>
             <time datetime="2017-07-14T18:30:00+03:00" class="news__time">14.07.2017, 18:30</time>
-            <button class="news__flag"><span class="visually-hidden">Выбрать новость</span></button>
+            <button class="news__flag">
+              <span class="visually-hidden">Выбрать новость</span>
+              <svg class="news__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21.14 14">
+                <polygon class="news__fill" points="19 13 1 13 1 1 19 1 14 7 19 13"/>
+              </svg>
+            </button>
           </p>
-          <div class="news__picture">
-            <img src="img/news-8.jpg" alt="Новость" class="news__img" width="260" height="130">
-            <p class="news__number">№ 70</p>
-          </div>
-          <h2 class="news__title">Военные курсы в гражданских вузах освободят от призыва.</h2>
-          <p class="news__text">Военные курсы в гражданских вузах освободят от призыва.</p>
+          <a href="#" class="news__link">
+            <div class="news__picture">
+              <img src="img/news-8.jpg" alt="Новость" class="news__img" width="260" height="130">
+              <p class="news__number">№ 70</p>
+            </div>
+            <h2 class="news__title">Военные курсы в гражданских вузах освободят от призыва.</h2>
+            <p class="news__text">Военные курсы в гражданских вузах освободят от призыва.</p>
+          </a>
         </li>
         <li class="banner">
-          <a href="#" class="banner__link">
-            <img src="img/banner-news.jpg" alt="Реклама" class="banner__news" width="260" height="238">
+          <a href="#" class="banner__link banner__link--news">
+            <img src="img/banner-news.jpg" alt="Реклама" class="banner__img" width="260" height="238">
           </a>
           <p class="banner__text">Реклама</p>
         </li>
@@ -275,26 +366,32 @@
             <div class="swiper-slide">
               <img src="img/slide-1.jpg" alt="Слайд 1" class="slider__img" width="1160" height="280">
               <p class="slider__label">Спецпроект 2017</p>
-              <p class="slider__text">
-                <span class="slider__title">ВЫБОРГСКИЙ ЗАМОК ОТ А ДО Я</span>
-                Цикл статей, посвященных Выборгскому замку
-              </p>
+              <div class="slider__info">
+                <p class="slider__text">
+                  <span class="slider__title"><b>ВЫБОРГСКИЙ ЗАМОК<br>ОТ А ДО Я</b></span>
+                  Цикл статей, посвященных Выборгскому замку
+                </p>
+              </div>
             </div>
             <div class="swiper-slide">
               <img src="img/slide-1.jpg" alt="Слайд 1" class="slider__img" width="1160" height="280">
               <p class="slider__label">Спецпроект 2017</p>
-              <p class="slider__text">
-                <span class="slider__title">ВЫБОРГСКИЙ ЗАМОК ОТ А ДО Я</span>
-                Цикл статей, посвященных Выборгскому замку
-              </p>
+              <div class="slider__info">
+                <p class="slider__text">
+                  <span class="slider__title"><b>ВЫБОРГСКИЙ ЗАМОК<br>ОТ А ДО Я</b></span>
+                  Цикл статей, посвященных Выборгскому замку
+                </p>
+              </div>
             </div>
             <div class="swiper-slide">
               <img src="img/slide-1.jpg" alt="Слайд 1" class="slider__img" width="1160" height="280">
               <p class="slider__label">Спецпроект 2017</p>
-              <p class="slider__text">
-                <span class="slider__title">ВЫБОРГСКИЙ ЗАМОК ОТ А ДО Я</span>
-                Цикл статей, посвященных Выборгскому замку
-              </p>
+              <div class="slider__info">
+                <p class="slider__text">
+                  <span class="slider__title"><b>ВЫБОРГСКИЙ ЗАМОК<br>ОТ А ДО Я</b></span>
+                  Цикл статей, посвященных Выборгскому замку
+                </p>
+              </div>
             </div>
         </div>
         <div class="swiper-button-next"></div>
@@ -304,222 +401,334 @@
     
     <section class="news">
       <h2 class="visually-hidden">Еще новости</h2>
-      <ul class="news__list">
+      <ul class="news__list news__list--full">
         <li class="news__item">
           <p class="news__top">
             <span class="news__category">Образование</span>
             <time datetime="2017-07-14T18:30:00+03:00" class="news__time">14.07.2017, 18:30</time>
-            <button class="news__flag"><span class="visually-hidden">Выбрать новость</span></button>
+            <button class="news__flag">
+              <span class="visually-hidden">Выбрать новость</span>
+              <svg class="news__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21.14 14">
+                <polygon class="news__fill" points="19 13 1 13 1 1 19 1 14 7 19 13"/>
+              </svg>
+            </button>
           </p>
-          <div class="news__picture">
-            <img src="img/news-6.jpg" alt="Новость" class="news__img" width="260" height="130">
-            <p class="news__number">№ 70</p>
-          </div>
-          <h2 class="news__title">Военные курсы в гражданских вузах освободят от призыва.</h2>
-          <p class="news__text">Военные курсы в гражданских вузах освободят от призыва.</p>
+          <a href="#" class="news__link">
+            <div class="news__picture">
+              <img src="img/news-6.jpg" alt="Новость" class="news__img" width="260" height="130">
+              <p class="news__number">№ 70</p>
+            </div>
+            <h2 class="news__title">Военные курсы в гражданских вузах освободят от призыва.</h2>
+            <p class="news__text">Военные курсы в гражданских вузах освободят от призыва.</p>
+          </a>
         </li>
         <li class="news__item">
           <p class="news__top">
             <span class="news__category">Закон и порядок</span>
             <time datetime="2017-07-14T18:30:00+03:00" class="news__time">14.07.2017, 18:30</time>
-            <button class="news__flag"><span class="visually-hidden">Выбрать новость</span></button>
+            <button class="news__flag">
+              <span class="visually-hidden">Выбрать новость</span>
+              <svg class="news__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21.14 14">
+                <polygon class="news__fill" points="19 13 1 13 1 1 19 1 14 7 19 13"/>
+              </svg>
+            </button>
           </p>
-          <div class="news__picture">
-            <img src="img/news-7.jpg" alt="Новость" class="news__img" width="260" height="130">
-            <p class="news__number">№ 70</p>
-          </div>
-          <h2 class="news__title">Незаконная раздача земель может ударить чиновнику по карьере.</h2>
-          <p class="news__text">Незаконная раздача земель может ударить чиновнику по карьере.</p>
+          <a href="#" class="news__link">
+            <div class="news__picture">
+              <img src="img/news-7.jpg" alt="Новость" class="news__img" width="260" height="130">
+              <p class="news__number">№ 70</p>
+            </div>
+            <h2 class="news__title">Незаконная раздача земель может ударить чиновнику по карьере.</h2>
+            <p class="news__text">Незаконная раздача земель может ударить чиновнику по карьере.</p>
+          </a>
         </li>
         <li class="news__item">
           <p class="news__top">
             <span class="news__category">Образование</span>
             <time datetime="2017-07-14T18:30:00+03:00" class="news__time">14.07.2017, 18:30</time>
-            <button class="news__flag"><span class="visually-hidden">Выбрать новость</span></button>
+            <button class="news__flag">
+              <span class="visually-hidden">Выбрать новость</span>
+              <svg class="news__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21.14 14">
+                <polygon class="news__fill" points="19 13 1 13 1 1 19 1 14 7 19 13"/>
+              </svg>
+            </button>
           </p>
-          <div class="news__picture">
-            <img src="img/news-8.jpg" alt="Новость" class="news__img" width="260" height="130">
-            <p class="news__number">№ 70</p>
-          </div>
-          <h2 class="news__title">Военные курсы в гражданских вузах освободят от призыва.</h2>
-          <p class="news__text">Военные курсы в гражданских вузах освободят от призыва.</p>
+          <a href="#" class="news__link">
+            <div class="news__picture">
+              <img src="img/news-8.jpg" alt="Новость" class="news__img" width="260" height="130">
+              <p class="news__number">№ 70</p>
+            </div>
+            <h2 class="news__title">Военные курсы в гражданских вузах освободят от призыва.</h2>
+            <p class="news__text">Военные курсы в гражданских вузах освободят от призыва.</p>
+          </a>
         </li>
         <li class="news__item">
           <p class="news__top">
             <span class="news__category">Закон и порядок</span>
             <time datetime="2017-07-14T18:30:00+03:00" class="news__time">14.07.2017, 18:30</time>
-            <button class="news__flag"><span class="visually-hidden">Выбрать новость</span></button>
+            <button class="news__flag">
+              <span class="visually-hidden">Выбрать новость</span>
+              <svg class="news__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21.14 14">
+                <polygon class="news__fill" points="19 13 1 13 1 1 19 1 14 7 19 13"/>
+              </svg>
+            </button>
           </p>
-          <div class="news__picture">
-            <img src="img/news-9.jpg" alt="Новость" class="news__img" width="260" height="130">
-            <p class="news__number">№ 70</p>
-          </div>
-          <h2 class="news__title">Незаконная раздача земель может ударить чиновнику по карьере.</h2>
-          <p class="news__text">Незаконная раздача земель может ударить чиновнику по карьере.</p>
+          <a href="#" class="news__link">
+            <div class="news__picture">
+              <img src="img/news-9.jpg" alt="Новость" class="news__img" width="260" height="130">
+              <p class="news__number">№ 70</p>
+            </div>
+            <h2 class="news__title">Незаконная раздача земель может ударить чиновнику по карьере.</h2>
+            <p class="news__text">Незаконная раздача земель может ударить чиновнику по карьере.</p>
+          </a>
         </li>
         <li class="news__item">
           <p class="news__top">
             <span class="news__category">Образование</span>
             <time datetime="2017-07-14T18:30:00+03:00" class="news__time">14.07.2017, 18:30</time>
-            <button class="news__flag"><span class="visually-hidden">Выбрать новость</span></button>
+            <button class="news__flag">
+              <span class="visually-hidden">Выбрать новость</span>
+              <svg class="news__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21.14 14">
+                <polygon class="news__fill" points="19 13 1 13 1 1 19 1 14 7 19 13"/>
+              </svg>
+            </button>
           </p>
-          <div class="news__picture">
-            <img src="img/news-6.jpg" alt="Новость" class="news__img" width="260" height="130">
-            <p class="news__number">№ 70</p>
-          </div>
-          <h2 class="news__title">Военные курсы в гражданских вузах освободят от призыва.</h2>
-          <p class="news__text">Военные курсы в гражданских вузах освободят от призыва.</p>
+          <a href="#" class="news__link">
+            <div class="news__picture">
+              <img src="img/news-6.jpg" alt="Новость" class="news__img" width="260" height="130">
+              <p class="news__number">№ 70</p>
+            </div>
+            <h2 class="news__title">Военные курсы в гражданских вузах освободят от призыва.</h2>
+            <p class="news__text">Военные курсы в гражданских вузах освободят от призыва.</p>
+          </a>
         </li>
         <li class="news__item">
           <p class="news__top">
             <span class="news__category">Закон и порядок</span>
             <time datetime="2017-07-14T18:30:00+03:00" class="news__time">14.07.2017, 18:30</time>
-            <button class="news__flag"><span class="visually-hidden">Выбрать новость</span></button>
+            <button class="news__flag">
+              <span class="visually-hidden">Выбрать новость</span>
+              <svg class="news__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21.14 14">
+                <polygon class="news__fill" points="19 13 1 13 1 1 19 1 14 7 19 13"/>
+              </svg>
+            </button>
           </p>
-          <div class="news__picture">
-            <img src="img/news-7.jpg" alt="Новость" class="news__img" width="260" height="130">
-            <p class="news__number">№ 70</p>
-          </div>
-          <h2 class="news__title">Незаконная раздача земель может ударить чиновнику по карьере.</h2>
-          <p class="news__text">Незаконная раздача земель может ударить чиновнику по карьере.</p>
+          <a href="#" class="news__link">
+            <div class="news__picture">
+              <img src="img/news-7.jpg" alt="Новость" class="news__img" width="260" height="130">
+              <p class="news__number">№ 70</p>
+            </div>
+            <h2 class="news__title">Незаконная раздача земель может ударить чиновнику по карьере.</h2>
+            <p class="news__text">Незаконная раздача земель может ударить чиновнику по карьере.</p>
+          </a>
         </li>
         <li class="news__item">
           <p class="news__top">
             <span class="news__category">Образование</span>
             <time datetime="2017-07-14T18:30:00+03:00" class="news__time">14.07.2017, 18:30</time>
-            <button class="news__flag"><span class="visually-hidden">Выбрать новость</span></button>
+            <button class="news__flag">
+              <span class="visually-hidden">Выбрать новость</span>
+              <svg class="news__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21.14 14">
+                <polygon class="news__fill" points="19 13 1 13 1 1 19 1 14 7 19 13"/>
+              </svg>
+            </button>
           </p>
-          <div class="news__picture">
-            <img src="img/news-8.jpg" alt="Новость" class="news__img" width="260" height="130">
-            <p class="news__number">№ 70</p>
-          </div>
-          <h2 class="news__title">Военные курсы в гражданских вузах освободят от призыва.</h2>
-          <p class="news__text">Военные курсы в гражданских вузах освободят от призыва.</p>
+          <a href="#" class="news__link">
+            <div class="news__picture">
+              <img src="img/news-8.jpg" alt="Новость" class="news__img" width="260" height="130">
+              <p class="news__number">№ 70</p>
+            </div>
+            <h2 class="news__title">Военные курсы в гражданских вузах освободят от призыва.</h2>
+            <p class="news__text">Военные курсы в гражданских вузах освободят от призыва.</p>
+          </a>
         </li>
         <li class="news__item">
           <p class="news__top">
             <span class="news__category">Закон и порядок</span>
             <time datetime="2017-07-14T18:30:00+03:00" class="news__time">14.07.2017, 18:30</time>
-            <button class="news__flag"><span class="visually-hidden">Выбрать новость</span></button>
+            <button class="news__flag">
+              <span class="visually-hidden">Выбрать новость</span>
+              <svg class="news__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21.14 14">
+                <polygon class="news__fill" points="19 13 1 13 1 1 19 1 14 7 19 13"/>
+              </svg>
+            </button>
           </p>
-          <div class="news__picture">
-            <img src="img/news-9.jpg" alt="Новость" class="news__img" width="260" height="130">
-            <p class="news__number">№ 70</p>
-          </div>
-          <h2 class="news__title">Незаконная раздача земель может ударить чиновнику по карьере.</h2>
-          <p class="news__text">Незаконная раздача земель может ударить чиновнику по карьере.</p>
+          <a href="#" class="news__link">
+            <div class="news__picture">
+              <img src="img/news-9.jpg" alt="Новость" class="news__img" width="260" height="130">
+              <p class="news__number">№ 70</p>
+            </div>
+            <h2 class="news__title">Незаконная раздача земель может ударить чиновнику по карьере.</h2>
+            <p class="news__text">Незаконная раздача земель может ударить чиновнику по карьере.</p>
+          </a>
         </li>
         <li class="news__item">
           <p class="news__top">
             <span class="news__category">Образование</span>
             <time datetime="2017-07-14T18:30:00+03:00" class="news__time">14.07.2017, 18:30</time>
-            <button class="news__flag"><span class="visually-hidden">Выбрать новость</span></button>
+            <button class="news__flag">
+              <span class="visually-hidden">Выбрать новость</span>
+              <svg class="news__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21.14 14">
+                <polygon class="news__fill" points="19 13 1 13 1 1 19 1 14 7 19 13"/>
+              </svg>
+            </button>
           </p>
-          <div class="news__picture">
-            <img src="img/news-6.jpg" alt="Новость" class="news__img" width="260" height="130">
-            <p class="news__number">№ 70</p>
-          </div>
-          <h2 class="news__title">Военные курсы в гражданских вузах освободят от призыва.</h2>
-          <p class="news__text">Военные курсы в гражданских вузах освободят от призыва.</p>
+          <a href="#" class="news__link">
+            <div class="news__picture">
+              <img src="img/news-6.jpg" alt="Новость" class="news__img" width="260" height="130">
+              <p class="news__number">№ 70</p>
+            </div>
+            <h2 class="news__title">Военные курсы в гражданских вузах освободят от призыва.</h2>
+            <p class="news__text">Военные курсы в гражданских вузах освободят от призыва.</p>
+          </a>
         </li>
         <li class="news__item">
           <p class="news__top">
             <span class="news__category">Закон и порядок</span>
             <time datetime="2017-07-14T18:30:00+03:00" class="news__time">14.07.2017, 18:30</time>
-            <button class="news__flag"><span class="visually-hidden">Выбрать новость</span></button>
+            <button class="news__flag">
+              <span class="visually-hidden">Выбрать новость</span>
+              <svg class="news__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21.14 14">
+                <polygon class="news__fill" points="19 13 1 13 1 1 19 1 14 7 19 13"/>
+              </svg>
+            </button>
           </p>
-          <div class="news__picture">
-            <img src="img/news-7.jpg" alt="Новость" class="news__img" width="260" height="130">
-            <p class="news__number">№ 70</p>
-          </div>
-          <h2 class="news__title">Незаконная раздача земель может ударить чиновнику по карьере.</h2>
-          <p class="news__text">Незаконная раздача земель может ударить чиновнику по карьере.</p>
+          <a href="#" class="news__link">
+            <div class="news__picture">
+              <img src="img/news-7.jpg" alt="Новость" class="news__img" width="260" height="130">
+              <p class="news__number">№ 70</p>
+            </div>
+            <h2 class="news__title">Незаконная раздача земель может ударить чиновнику по карьере.</h2>
+            <p class="news__text">Незаконная раздача земель может ударить чиновнику по карьере.</p>
+          </a>
         </li>
         <li class="news__item">
           <p class="news__top">
             <span class="news__category">Образование</span>
             <time datetime="2017-07-14T18:30:00+03:00" class="news__time">14.07.2017, 18:30</time>
-            <button class="news__flag"><span class="visually-hidden">Выбрать новость</span></button>
+            <button class="news__flag">
+              <span class="visually-hidden">Выбрать новость</span>
+              <svg class="news__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21.14 14">
+                <polygon class="news__fill" points="19 13 1 13 1 1 19 1 14 7 19 13"/>
+              </svg>
+            </button>
           </p>
-          <div class="news__picture">
-            <img src="img/news-8.jpg" alt="Новость" class="news__img" width="260" height="130">
-            <p class="news__number">№ 70</p>
-          </div>
-          <h2 class="news__title">Военные курсы в гражданских вузах освободят от призыва.</h2>
-          <p class="news__text">Военные курсы в гражданских вузах освободят от призыва.</p>
+          <a href="#" class="news__link">
+            <div class="news__picture">
+              <img src="img/news-8.jpg" alt="Новость" class="news__img" width="260" height="130">
+              <p class="news__number">№ 70</p>
+            </div>
+            <h2 class="news__title">Военные курсы в гражданских вузах освободят от призыва.</h2>
+            <p class="news__text">Военные курсы в гражданских вузах освободят от призыва.</p>
+          </a>
         </li>
         <li class="news__item">
           <p class="news__top">
             <span class="news__category">Закон и порядок</span>
             <time datetime="2017-07-14T18:30:00+03:00" class="news__time">14.07.2017, 18:30</time>
-            <button class="news__flag"><span class="visually-hidden">Выбрать новость</span></button>
+            <button class="news__flag">
+              <span class="visually-hidden">Выбрать новость</span>
+              <svg class="news__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21.14 14">
+                <polygon class="news__fill" points="19 13 1 13 1 1 19 1 14 7 19 13"/>
+              </svg>
+            </button>
           </p>
-          <div class="news__picture">
-            <img src="img/news-9.jpg" alt="Новость" class="news__img" width="260" height="130">
-            <p class="news__number">№ 70</p>
-          </div>
-          <h2 class="news__title">Незаконная раздача земель может ударить чиновнику по карьере.</h2>
-          <p class="news__text">Незаконная раздача земель может ударить чиновнику по карьере.</p>
+          <a href="#" class="news__link">
+            <div class="news__picture">
+              <img src="img/news-9.jpg" alt="Новость" class="news__img" width="260" height="130">
+              <p class="news__number">№ 70</p>
+            </div>
+            <h2 class="news__title">Незаконная раздача земель может ударить чиновнику по карьере.</h2>
+            <p class="news__text">Незаконная раздача земель может ударить чиновнику по карьере.</p>
+          </a>
         </li>
         <li class="news__item">
           <p class="news__top">
             <span class="news__category">Образование</span>
             <time datetime="2017-07-14T18:30:00+03:00" class="news__time">14.07.2017, 18:30</time>
-            <button class="news__flag"><span class="visually-hidden">Выбрать новость</span></button>
+            <button class="news__flag">
+              <span class="visually-hidden">Выбрать новость</span>
+              <svg class="news__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21.14 14">
+                <polygon class="news__fill" points="19 13 1 13 1 1 19 1 14 7 19 13"/>
+              </svg>
+            </button>
           </p>
-          <div class="news__picture">
-            <img src="img/news-6.jpg" alt="Новость" class="news__img" width="260" height="130">
-            <p class="news__number">№ 70</p>
-          </div>
-          <h2 class="news__title">Военные курсы в гражданских вузах освободят от призыва.</h2>
-          <p class="news__text">Военные курсы в гражданских вузах освободят от призыва.</p>
+          <a href="#" class="news__link">
+            <div class="news__picture">
+              <img src="img/news-6.jpg" alt="Новость" class="news__img" width="260" height="130">
+              <p class="news__number">№ 70</p>
+            </div>
+            <h2 class="news__title">Военные курсы в гражданских вузах освободят от призыва.</h2>
+            <p class="news__text">Военные курсы в гражданских вузах освободят от призыва.</p>
+          </a>
         </li>
         <li class="news__item">
           <p class="news__top">
             <span class="news__category">Закон и порядок</span>
             <time datetime="2017-07-14T18:30:00+03:00" class="news__time">14.07.2017, 18:30</time>
-            <button class="news__flag"><span class="visually-hidden">Выбрать новость</span></button>
+            <button class="news__flag">
+              <span class="visually-hidden">Выбрать новость</span>
+              <svg class="news__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21.14 14">
+                <polygon class="news__fill" points="19 13 1 13 1 1 19 1 14 7 19 13"/>
+              </svg>
+            </button>
           </p>
-          <div class="news__picture">
-            <img src="img/news-7.jpg" alt="Новость" class="news__img" width="260" height="130">
-            <p class="news__number">№ 70</p>
-          </div>
-          <h2 class="news__title">Незаконная раздача земель может ударить чиновнику по карьере.</h2>
-          <p class="news__text">Незаконная раздача земель может ударить чиновнику по карьере.</p>
+          <a href="#" class="news__link">
+            <div class="news__picture">
+              <img src="img/news-7.jpg" alt="Новость" class="news__img" width="260" height="130">
+              <p class="news__number">№ 70</p>
+            </div>
+            <h2 class="news__title">Незаконная раздача земель может ударить чиновнику по карьере.</h2>
+            <p class="news__text">Незаконная раздача земель может ударить чиновнику по карьере.</p>
+          </a>
         </li>
         <li class="news__item">
           <p class="news__top">
             <span class="news__category">Образование</span>
             <time datetime="2017-07-14T18:30:00+03:00" class="news__time">14.07.2017, 18:30</time>
-            <button class="news__flag"><span class="visually-hidden">Выбрать новость</span></button>
+            <button class="news__flag">
+              <span class="visually-hidden">Выбрать новость</span>
+              <svg class="news__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21.14 14">
+                <polygon class="news__fill" points="19 13 1 13 1 1 19 1 14 7 19 13"/>
+              </svg>
+            </button>
           </p>
-          <div class="news__picture">
-            <img src="img/news-8.jpg" alt="Новость" class="news__img" width="260" height="130">
-            <p class="news__number">№ 70</p>
-          </div>
-          <h2 class="news__title">Военные курсы в гражданских вузах освободят от призыва.</h2>
-          <p class="news__text">Военные курсы в гражданских вузах освободят от призыва.</p>
+          <a href="#" class="news__link">
+            <div class="news__picture">
+              <img src="img/news-8.jpg" alt="Новость" class="news__img" width="260" height="130">
+              <p class="news__number">№ 70</p>
+            </div>
+            <h2 class="news__title">Военные курсы в гражданских вузах освободят от призыва.</h2>
+            <p class="news__text">Военные курсы в гражданских вузах освободят от призыва.</p>
+          </a>
         </li>
         <li class="news__item">
           <p class="news__top">
             <span class="news__category">Закон и порядок</span>
             <time datetime="2017-07-14T18:30:00+03:00" class="news__time">14.07.2017, 18:30</time>
-            <button class="news__flag"><span class="visually-hidden">Выбрать новость</span></button>
+            <button class="news__flag">
+              <span class="visually-hidden">Выбрать новость</span>
+              <svg class="news__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21.14 14">
+                <polygon class="news__fill" points="19 13 1 13 1 1 19 1 14 7 19 13"/>
+              </svg>
+            </button>
           </p>
-          <div class="news__picture">
-            <img src="img/news-9.jpg" alt="Новость" class="news__img" width="260" height="130">
-            <p class="news__number">№ 70</p>
-          </div>
-          <h2 class="news__title">Незаконная раздача земель может ударить чиновнику по карьере.</h2>
-          <p class="news__text">Незаконная раздача земель может ударить чиновнику по карьере.</p>
+          <a href="#" class="news__link">
+            <div class="news__picture">
+              <img src="img/news-9.jpg" alt="Новость" class="news__img" width="260" height="130">
+              <p class="news__number">№ 70</p>
+            </div>
+            <h2 class="news__title">Незаконная раздача земель может ударить чиновнику по карьере.</h2>
+            <p class="news__text">Незаконная раздача земель может ударить чиновнику по карьере.</p>
+          </a>
         </li>
       </ul>
     </section>
     
     <div class="wrapper">
       <div class="banner">
-        <a href="#" class="banner__link">
-          <img src="img/banner-wide-1.jpg" alt="Реклама" class="banner__wide" width="1160" height="135">
+        <a href="#" class="banner__link banner__link--wide">
+          <img src="img/banner-wide-1.jpg" alt="Реклама" class="banner__img" width="1160" height="135">
         </a>
         <p class="banner__text">Реклама</p>
       </div>
@@ -542,10 +751,10 @@
     <section class="widgets">
       <div class="wrapper">
         <p class="widgets__text">Сайт газеты «Выборг» — ежедневно публикует самые свежие новости города Выборга и Выборгского района, а также наиболее значимые события Ленинградской области. Политика и власть, экономика и бизнес, дороги и транспорт, недвижимость и благоустройство, происшествия и криминал, жизнь и проблемы современной молодежи, сельская и дачная жизнь, экология и здоровье, история и достопримечательности города Выборга и Выборгского района, новости и события по обе стороны финской границы – вот некоторые темы, которые освещает наше издание. На веб-сайте представлены анонсы культурных и спортивных мероприятий, афиша, расписание городских и пригородных автобусов.</p>
-        <div class="widget__block">
+        <div class="widgets__block">
           <img src="img/widget-vk.jpg" alt="" width="260" height="230">
         </div>
-        <div class="widget__block">
+        <div class="widgets__block">
           <img src="img/widget-fb.jpg" alt="" width="260" height="230">
         </div>
       </div>
@@ -553,8 +762,8 @@
     
     <div class="wrapper">
       <div class="banner">
-        <a href="#" class="banner__link">
-          <img src="img/banner-wide-2.jpg" alt="Реклама" class="banner__wide" width="1160" height="135">
+        <a href="#" class="banner__link banner__link--wide">
+          <img src="img/banner-wide-2.jpg" alt="Реклама" class="banner__img" width="1160" height="135">
         </a>
         <p class="banner__text">Реклама</p>
       </div>
@@ -597,22 +806,30 @@
           </li>
         </ul>
         <div class="user">
-          <a href="#" class="user__link">Вход</a>
-          <a href="#" class="user__link">Регистрация</a>
+          <a href="#" class="user__link user__link--footer"><span>Вход</span></a>
+          <a href="#" class="user__link user__link--footer"><span>Регистрация</span></a>
         </div>
       <div class="footer__developers">
-        Сайт создан в 
-        <a href="http://gs-inc.ru/" class="footer__link">
-          Студии Сархана Громова
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 79.11 39.35">
-            <path class="footer__logo" d="M98.13,355.9H58.56V316.55H98.13V355.9Zm-38.56-1H97.13V317.55H59.56V354.9Z" transform="translate(-58.56 -316.55)"/>
-            <path class="footer__logo" d="M137.68,355.9H99.54V316.55h38.13V355.9Zm-37.13-1h36.13V317.55H100.54V354.9Z" transform="translate(-58.56 -316.55)"/>
-            <path class="footer__logo" d="M82.71,337.24v-0.47H78.54v0.47h0.68c0.42,0,.53.12,0.53,0.76v0.9a1.19,1.19,0,0,1-1.18,1.38c-1.3,0-2.28-1-2.28-3.83,0-3.32.91-4.08,2.17-4.08,0.79,0,2,.49,2.47,2.94h0.48l-0.18-3.41H80.81l-0.34,1a2.84,2.84,0,0,0-2.18-1c-2.46,0-4.05,1.87-4.05,4.65s1.85,4.36,4,4.36a3.08,3.08,0,0,0,2.41-1.25l0.62,1.27h0.47V338c0-.64.11-0.76,0.53-0.76h0.43Z" transform="translate(-58.56 -316.55)"/>
-            <path class="footer__logo" d="M122,338.18c0-1.7-1.41-2.26-2.77-2.65s-2.41-.71-2.41-1.79a1.38,1.38,0,0,1,1.5-1.38,2.88,2.88,0,0,1,2.8,2.73h0.47l-0.14-3.18h-0.37l-0.31.92a3.3,3.3,0,0,0-2.44-.94c-1.74,0-3,.9-3,2.66s1.37,2.27,2.73,2.69c1.2,0.36,2.32.71,2.32,1.82,0,0.94-.85,1.36-1.87,1.36a3.2,3.2,0,0,1-3.06-3H115l0.22,3.45h0.37l0.3-1a3.5,3.5,0,0,0,2.59,1c1.68,0,3.53-.89,3.53-2.72" transform="translate(-58.56 -316.55)"/>
-          </svg>
-        </a>
+        <p class="footer__design">
+          <span>Сайт создан в </span>
+          <a href="http://gs-inc.ru/" class="footer__link">Студии Сархана Громова</a>
+        </p>
+        <svg class="footer__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 79.11 39.35">
+          <rect fill="#fff" width="37.56" height="37.35"/>
+          <rect fill="#fff" x="38.98" width="36.13" height="37.35"/>
+          <path class="footer__logo" d="M81.71,138.79v-0.47H77.54v0.47h0.68c0.42,0,.53.12,0.53,0.76v0.9a1.19,1.19,0,0,1-1.18,1.38c-1.3,0-2.28-1-2.28-3.83,0-3.33.91-4.08,2.17-4.08,0.79,0,2,.49,2.47,2.94h0.48l-0.18-3.41H79.8l-0.34,1a2.84,2.84,0,0,0-2.18-1c-2.46,0-4.05,1.87-4.05,4.66s1.85,4.35,4,4.35a3.08,3.08,0,0,0,2.41-1.25l0.62,1.27h0.47v-2.93c0-.64.11-0.76,0.53-0.76h0.43Z" transform="translate(-58.56 -119.09)"/>
+          <path class="footer__logo" d="M119,139.72c0-1.7-1.42-2.26-2.77-2.65s-2.41-.71-2.41-1.79a1.38,1.38,0,0,1,1.5-1.38,2.88,2.88,0,0,1,2.8,2.72h0.47l-0.14-3.18h-0.37l-0.31.92a3.3,3.3,0,0,0-2.44-.94c-1.74,0-3,.9-3,2.66s1.37,2.27,2.74,2.69c1.2,0.36,2.32.71,2.32,1.82,0,0.94-.85,1.36-1.87,1.36a3.2,3.2,0,0,1-3.06-3H112l0.22,3.45h0.37l0.3-1a3.5,3.5,0,0,0,2.59,1c1.68,0,3.53-.89,3.53-2.72" transform="translate(-58.56 -119.09)"/>
+        </svg>
       </div>
     </div>
   </footer>
+  
+  <script src="js/swiper.min.js"></script>
+  <script>
+    var swiper = new Swiper(".swiper-container", {
+      nextButton: ".swiper-button-next",
+      prevButton: ".swiper-button-prev",
+    });
+  </script>
 </body>
 </html>

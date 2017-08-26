@@ -1,0 +1,51 @@
+.menu {
+  width: 100%;
+  background-color: @grey-bg;
+}
+
+.menu__list {
+  display: flex;
+  align-items: center;
+}
+
+.menu__link {
+  padding: 25px 0;
+  margin-right: 10px;
+  color: #000;
+  letter-spacing: 2px;
+  text-decoration: none;
+  text-transform: uppercase;
+  
+  span {
+    border-bottom: 1px solid @bottom;
+  
+    &:hover,
+    &:active {
+      border-bottom: 1px dashed @bottom;
+    }
+  }
+}
+
+.menu__link--active {
+  span {
+    border-bottom: 1px dashed @bottom;
+  }
+}
+
+.menu__arxiv {
+  padding-left: 30px;
+  position: relative;
+  
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 18px;
+    background-image: url(../img/icon-arxiv.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+}
