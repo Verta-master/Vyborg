@@ -1,0 +1,18 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25.1 26.74">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #41558c;
+        stroke-width: 1.64px;
+      }
+    </style>
+  </defs>
+  <title>icon-zoom</title>
+  <g>
+    <line class="cls-1" x1="14.56" y1="4.78" x2="14.56" y2="16.29"/>
+    <line class="cls-1" x1="20.31" y1="10.54" x2="8.8" y2="10.54"/>
+    <circle class="cls-1" cx="14.56" cy="10.54" r="9.72"/>
+    <line class="cls-1" x1="8.22" y1="18.52" x2="0.58" y2="26.16"/>
+  </g>
+</svg>

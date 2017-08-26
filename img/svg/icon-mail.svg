@@ -1,0 +1,14 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 14">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #41558c;
+        stroke-miterlimit: 10;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <title>icon-mail</title>
+  <path class="cls-1" d="M62.24,1900.08l9,7,9-7m0,12h-18v-12h18v12Z" transform="translate(-61.24 -1899.08)"/>
+</svg>

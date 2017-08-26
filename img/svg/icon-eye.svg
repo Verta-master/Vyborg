@@ -1,0 +1,14 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24.15 14">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #41558c;
+        stroke-miterlimit: 10;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <title>icon-eye</title>
+  <path class="cls-1" d="M796.59,581.19a6,6,0,1,1-6-6A6,6,0,0,1,796.59,581.19Zm-17,0s2.38-6,11-6,11,6,11,6-2.39,6-11,6S779.59,581.19,779.59,581.19Z" transform="translate(-778.52 -574.19)"/>
+</svg>

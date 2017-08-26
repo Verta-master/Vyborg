@@ -1,0 +1,14 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20.78 20.78">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #41558c;
+        stroke-miterlimit: 10;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <title>icon-search</title>
+  <path class="cls-1" d="M1194.63,167.26l-7.66,7.66M1206,162.53a6.69,6.69,0,1,1-6.69-6.69A6.69,6.69,0,0,1,1206,162.53Z" transform="translate(-1186.27 -154.84)"/>
+</svg>
