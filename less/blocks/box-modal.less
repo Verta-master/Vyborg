@@ -1,0 +1,161 @@
+.arcticmodal-overlay,
+.arcticmodal-container { position: fixed; left: 0; top: 0; right: 0; bottom: 0; z-index: 1000; }
+.arcticmodal-container { overflow: auto; margin: 0; padding: 0; border: 0; border-collapse: collapse; }
+*:first-child+html .arcticmodal-container { height: 100% }
+.arcticmodal-container_i { height: 100%; margin: 0 auto; }
+.arcticmodal-container_i2 { padding: 24px; margin: 0; border: 0; vertical-align: middle; }
+.arcticmodal-error { padding: 20px; border-radius: 10px; background: #000; color: #fff; }
+.arcticmodal-loading { width: 80px; height: 80px; border-radius: 10px; background: #000 url(../img/loading.gif) no-repeat 50% 50%; }
+
+.box-modal {
+	position: relative;
+	width: 440px;
+	padding: 40px;
+	background-color: #fff;
+}
+
+.box-modal_close { 
+  position: absolute; 
+  right: -23px; 
+  top: -23px; 
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  background-color: @blue-bg;
+  background-image: url(../img/icon-close.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 18px 18px;
+  cursor: pointer;
+}
+
+.box-modal_close:hover { 
+  opacity: 0.8; 
+}
+
+.box-modal__body {
+  width: 100%;
+  display: none;
+}
+
+.box-modal__choice {
+  display: none;
+}
+
+.box-modal__label {
+  margin-right: 45px;
+  cursor: pointer;
+  font-size: 30px;
+  line-height: 36px;
+  color: #000;
+  position: relative;
+  
+  &:first-of-type::after {
+    content: "|";
+    position: absolute;
+    top: 0;
+    right: -30px;
+  }
+  
+  &:hover,
+  &:active {
+    opacity: 0.7;
+  }
+}
+
+.box-modal__btn {
+  min-width: 160px;
+  min-height: 42px;
+  background-color: @blue-bg;
+  border: none;
+  color: #fff;
+  margin-left: 0;
+  margin-right: auto;
+  margin-bottom: 45px;
+  padding: 0 40px;
+  cursor: pointer;
+  
+  &:hover,
+  &:active {
+    opacity: 0.8;
+  }
+}
+
+.box-modal__choice:checked + label {
+  color: #000;
+  border-bottom: none;
+  cursor: default;
+  
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.box-modal__choice:not(checked) + label {
+  color: @blue-bg;
+  border-bottom: 1px dashed @blue-bg;
+}
+
+.box-modal__choice--enter:checked ~ .box-modal__enter,
+.box-modal__choice--reg:checked ~ .box-modal__reg {
+  display: block;
+}
+
+.box-modal__form {
+  margin-top: 40px;
+  margin-bottom: 50px;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.box-modal__text {
+  display: block;
+  font: inherit;
+}
+
+.box-modal__input {
+  width: 100%;
+  min-height: 43px;
+  padding: 0 40px 0 20px;
+  font: inherit;
+  margin-top: 12px;
+  margin-bottom: 40px;
+}
+
+.box-modal__policy {
+  color: @blue-bg;
+  text-decoration: none;
+  border-bottom: 1px dashed @blue-bg;
+  
+  &:hover {
+    opacity: 0.7;
+  }
+}
+
+.box-modal__field {
+  position: relative;
+}
+
+.box-modal__pass {
+  display: none;
+}
+
+.box-modal__toggle {
+  position: absolute;
+  bottom: 40px;
+  right: 0;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  background-repeat: no-repeat;
+  background-size: 25px 14px;
+  background-position: center;
+}
+
+.box-modal__pass:checked + .box-modal__toggle {
+  background-image: url(../img/icon-password.svg);
+}
+
+.box-modal__pass:not(checked) + .box-modal__toggle {
+  background-image: url(../img/icon-eye.svg);
+}

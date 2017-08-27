@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta  name="viewport" content="width=device-width,initial-scale=1">
+  <title>Газета Выборг</title>
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+  <header class="header">
+    <div class="header__top">
+      <div class="wrapper">
+        <div class="header__info">
+          <time datetime="2017-07-05T12:37:00+03:00" class="header__date">5 июля, среда 12:37</time>
+          <p class="header__currency">USD <span>59,58</span></p>
+          <p class="header__currency">EUR <span>67,30</span></p>
+        </div>
+        <ul class="social">
+          <li class="social__item">
+            <a href="#" class="social__link social__link--vk"><span class="visually-hidden">В контакте</span></a>
+          </li>
+          <li class="social__item">
+            <a href="#" class="social__link social__link--fb"><span class="visually-hidden">Фейсбук</span></a>
+          </li>
+          <li class="social__item">
+            <a href="#" class="social__link social__link--in"><span class="visually-hidden">Инстаграм</span></a>
+          </li>
+          <li class="social__item">
+            <a href="#" class="social__link social__link--ok"><span class="visually-hidden">Одноклассники</span></a>
+          </li>
+          <li class="social__item">
+            <a href="#" class="social__link social__link--tw"><span class="visually-hidden">Твиттер</span></a>
+          </li>
+          <li class="social__item">
+            <a href="#" class="social__link social__link--mk"><span class="visually-hidden">Мой круг</span></a>
+          </li>
+          <li class="social__item">
+            <a href="#" class="social__link social__link--tg"><span class="visually-hidden">Телеграм</span></a>
+          </li>
+          <li class="social__item">
+            <a href="#" class="social__link social__link--gp"><span class="visually-hidden">Google Plus</span></a>
+          </li>
+          <li class="social__item">
+            <a href="#" class="social__link social__link--yt"><span class="visually-hidden">YouTube</span></a>
+          </li>
+          <li class="social__item">
+            <a href="#" class="social__link social__link--wa"><span class="visually-hidden">WhatsApp</span></a>
+          </li>
+        </ul>
+        <div class="user">
+          <a href="#" class="user__link"><span>Вход</span></a>
+          <a href="#" class="user__link"><span>Регистрация</span></a>
+        </div>
+      </div>
+    </div>
+    <div class="wrapper">
+      <div class="logo">
+        <img src="img/logo.png" alt="Газета Выборг" class="logo__img" width="340" height="150">
+      </div>
+      <div class="banner">
+        <a href="#" class="banner__link banner__link--header">
+          <img src="img/banner-header.png" alt="Реклама" class="banner__img" width="460" height="85">
+          <p class="banner__title">Туры в Индию - от 25 000 &#8381;</p>
+        </a>
+      </div>
+      <a href="#" class="new-issue">Свежий выпуск</a>
+      <form action="#" method="get" class="push">
+        <input type="checkbox" name="push" id="push" class="push__checkbox">
+        <label for="push" class="push__label">Включить уведомления</label>
+        <p class="push__info">Теперь вы можете сохранять понравившиеся вам новости, для того чтобы прочесть их позже.</p>
+      </form>
+    </div>
+    <nav class="menu">
+      <div class="wrapper">
+        <ul class="menu__list">
+          <li class="menu__item">
+            <a class="menu__link menu__link--active"><span>Новости</span></a>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="menu__link"><span>Статьи</span></a>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="menu__link"><span>Афиша</span></a>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="menu__link"><span>Туристу</span></a>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="menu__link"><span>Спецпроекты</span></a>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="menu__link"><span>О нас</span></a>
+          </li>
+        </ul>
+        <a href="#" class="menu__link menu__arxiv"><span>Архив</span></a>
+        <form action="#" method="get" class="search">
+          <input type="text" name="search" id="search" class="search__input" placeholder="Поиск по сайту">
+          <button type="submit" class="search__btn">
+            <span class="visually-hidden">Искать</span>
+            <svg class="search__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20.78 20.78">
+              <path class="search__fill" d="M1194.63,167.26l-7.66,7.66M1206,162.53a6.69,6.69,0,1,1-6.69-6.69A6.69,6.69,0,0,1,1206,162.53Z" transform="translate(-1186.27 -154.84)"/>
+            </svg>
+          </button>
+        </form>
+      </div>
+    </nav>
+  </header>
+  
+  <main>
+    <div class="wrapper">
+      <nav class="breadcrumbs">
+        <a href="#" class="breadcrumbs__link">Главная</a>
+        <a href="#" class="breadcrumbs__link">Краеведение</a>
+        <a href="#" class="breadcrumbs__link">Рыцари, драконы...</a>
+      </nav>
+      
+      <article class="article">
+        <h1 class="article__h1">Рыцари, драконы, прекрасные дамы…</h1>
+        <p class="news__top">
+          <time datetime="2017-07-14T18:30:00+03:00" class="news__time">14.07.2017, 18:30</time>
+          <button class="news__flag">
+            <span class="visually-hidden">Выбрать новость</span>
+            <svg class="news__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21.14 14">
+              <polygon class="news__fill" points="19 13 1 13 1 1 19 1 14 7 19 13"/>
+            </svg>
+          </button>
+        </p>
+        <figure>
+          <div class="news__picture">
+            <img src="img/article-1.jpg" alt="Статья" class="news__img" width="960" height="720">
+            <p class="news__number">№ 40</p>
+          </div>
+          <figcaption class="article__photo">
+            Участники мероприятия.
+            <span>Фото: Аристарх Васютин.</span>
+          </figcaption>
+        </figure>
+        <p class="article__text">Две выставки, подчиненные одной теме, открылись в Выборгском замке Мария Любимова и Вера Левина живут в Петербурге и знакомы с детских лет. Обе окончили академический художественный лицей им. Иогансона, а затем – Академию художеств. Обе увлекаются культурой Средневековья, правда, каждая на свой лад.</p>
+        <blockquote class="citation">
+          — Фестиваль начал свою историю в 2014 году в Виролахти. Но у нас всегда была мечта  обязательно приехать в Выборг. Мы находимся настолько рядом, что выступить у вас было только делом времени, тем более что для музыки не существует границ. И мы очень рады, что наша мечта наконец сбылась,  отметила учредительный директор Сири Ахопелто (Siru Ahopelto)
+          <span class="citation__source">Сергей Попов. Генерал ВВС РФ</span>
+        </blockquote>
+        
+        <section class="slider">
+          <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="img/slide-1.jpg" alt="Слайд 1" class="slider__img" width="1160" height="280">
+                  <p class="slider__label">Спецпроект 2017</p>
+                  <div class="slider__info">
+                    <p class="slider__text">
+                      <span class="slider__title"><b>ВЫБОРГСКИЙ ЗАМОК<br>ОТ А ДО Я</b></span>
+                      Цикл статей, посвященных Выборгскому замку
+                    </p>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <img src="img/slide-1.jpg" alt="Слайд 1" class="slider__img" width="1160" height="280">
+                  <p class="slider__label">Спецпроект 2017</p>
+                  <div class="slider__info">
+                    <p class="slider__text">
+                      <span class="slider__title"><b>ВЫБОРГСКИЙ ЗАМОК<br>ОТ А ДО Я</b></span>
+                      Цикл статей, посвященных Выборгскому замку
+                    </p>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <img src="img/slide-1.jpg" alt="Слайд 1" class="slider__img" width="1160" height="280">
+                  <p class="slider__label">Спецпроект 2017</p>
+                  <div class="slider__info">
+                    <p class="slider__text">
+                      <span class="slider__title"><b>ВЫБОРГСКИЙ ЗАМОК<br>ОТ А ДО Я</b></span>
+                      Цикл статей, посвященных Выборгскому замку
+                    </p>
+                  </div>
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+        </section>
+        
+        <p class="article__text">Две выставки, подчиненные одной теме, открылись в Выборгском замке Мария ЛЮБИМОВА и Вера ЛЕВИНА живут в Петербурге и знакомы с детских лет. Обе окончили академический художественный лицей им. Иогансона, а затем – Академию художеств. Обе увлекаются культурой Средневековья, правда, каждая на свой лад.</p>
+        
+        <section class="video">
+          
+          <p class="article__photo">
+            Участники мероприятия.
+            <span>Фото: Аристарх Васютин.</span>
+          </p>
+        </section>
+        <p class="anounce">
+          Первый концерт фестиваля камерной музыки Юго-Восточной Финляндии <a href="#" class="anounce__link">«Музыка без границ»</a> прошел в библиотеке Алвара Аалто. Богатая история совместного международного сотрудничества между финскими и российскими городами создали предпосылки для организации концерта в Выборге.
+        </p>
+        
+        <section class="audio">
+          <a href="#" class="audio__link">Рыцарский гимн</a>
+          
+        </section>
+        
+        <p class="article__text">Две выставки, подчиненные одной теме, открылись в Выборгском замке Мария ЛЮБИМОВА и Вера ЛЕВИНА живут в Петербурге и знакомы с детских лет. Обе окончили академический художественный лицей им. Иогансона, а затем – Академию художеств. Обе увлекаются культурой Средневековья, правда, каждая на свой лад. Фестиваль начал свою историю в 2014 году в Виролахти. Но у нас всегда была мечта  обязательно приехать в Выборг. Мы находимся настолько рядом, что выступить у вас было только делом времени, тем более что для музыки не существует границ. И мы очень рады, что наша мечта наконец сбылась, — отметила учредительный директор Сири Ахопелто (Siru Ahopelto) на открытии фестиваля</p>
+        
+        <ul class="download">
+          <li class="download__item">
+            <a href="#" class="download__link" download>Устав муниципального образования «Выборгский район» Лен. области</a>
+            <span class="download__size">PDF, 5 МБ</span>
+          </li>
+          <li class="download__item">
+            <a href="#" class="download__link" download>Устав муниципального образования «Выборгский район» Лен. области</a>
+            <span class="download__size">DOC, 5 МБ</span>
+          </li>
+        </ul>
+        
+        <div class="map"></div>
+        
+        <div class="banner">
+          <a href="#" class="banner__link banner__link--wide">
+            <img src="img/banner-wide-1.jpg" alt="Реклама" class="banner__img" width="1160" height="135">
+          </a>
+          <p class="banner__text">Реклама</p>
+        </div>
+        
+        <section class="comments">
+          <form action="#" method="post" class="comments__form">
+            <textarea name="comment" class="comments__field" placeholder="Оставьте ваш комментарий"></textarea>
+            <button type="submit" class="comments__send">Отправить</button>
+          </form>
+          <p class="comments__total"><span>160</span> комментариев</p>
+          <div class="comments__person">
+            <img src="img/person-1.jpg" class="comment__img" alt="Дмитрий Алексеев" width="60" height="60">
+            <div class="comments__info">
+              <p class="comments__name">
+                Дмитрий Алексеев
+                <time datetime="2017-07-05T20:05:00+03:00" class="comments__time">05.07.2017 в 20:05</time>
+              </p>
+              <p class="comments__text">Интересно с ними поступают в Финляндии. Сначала мигранты наводнили Хельсинки и другие крупные для Финляндии города и местное население начало роптать. Политики поняли, что дело пахнет керосином, в крупных городах живет много избирателей и приняли меры: издали распоряжение, что получать пособие беженцы могут только по месту жительства, которое ему укажут местные власти. Если хочешь жить в другом месте - пожалуйста, работай, плати налоги, снимай жилье сам. А жилье выделяют в глубинке поближе к полярному кругу, где ночь по полгода и зима восемь месяцев. Беженцы южный народ, сами просят чтобы их отправили назад.</p>
+              <div class="comments__action">
+                <input type="checkbox" name="reply" id="comment-1" class="comments__reply">
+                <label for="comment-1" class="comments__label"></label>
+                <button type="button" class="comments__like">+</button>
+                <span class="comment__likecount">2</span>
+                <button type="button" class="comments__like comments__like--dislike">-</button>
+                <span class="comment__dislikecount">7</span>
+                <div class="comment__show">
+                  <img src="img/person-2.jpg" alt="Станислав Поло" class="comment__img" width="60" height="60">
+                  <p class="comments__name">Станислав Поло   >   Дмитрий Алексеев</p>
+                  <form action="#" method="post" class="comments__form">
+                    <textarea name="comment" class="comments__field" placeholder="Напишите ваш комментарий"></textarea>
+                    <button type="submit" class="comments__send">Отправить</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="comments__person">
+            <img src="img/person-3.jpg" class="comment__img" alt="Дмитрий Алексеев" width="60" height="60">
+            <div class="comments__info">
+              <p class="comments__name">
+                Дмитрий Алексеев
+                <time datetime="2017-07-05T20:05:00+03:00" class="comments__time">05.07.2017 в 20:05</time>
+              </p>
+              <p class="comments__text">Интересно с ними поступают в Финляндии. Сначала мигранты наводнили Хельсинки и другие крупные для Финляндии города и местное население начало роптать. Политики поняли, что дело пахнет керосином, в крупных городах живет много избирателей и приняли меры: издали распоряжение, что получать пособие беженцы могут только по месту жительства, которое ему укажут местные власти. Если хочешь жить в другом месте - пожалуйста, работай, плати налоги, снимай жилье сам. А жилье выделяют в глубинке поближе к полярному кругу, где ночь по полгода и зима восемь месяцев. Беженцы южный народ, сами просят чтобы их отправили назад.</p>
+              <div class="comments__action">
+                <input type="checkbox" name="reply" id="comment-1" class="comments__reply">
+                <label for="comment-1" class="comments__label"></label>
+                <button type="button" class="comments__like">+</button>
+                <span class="comment__likecount">2</span>
+                <button type="button" class="comments__like comments__like--dislike">-</button>
+                <span class="comment__dislikecount">7</span>
+                <div class="comment__show">
+                  <img src="img/person-2.jpg" alt="Станислав Поло" class="comment__img" width="60" height="60">
+                  <p class="comments__name">Станислав Поло   >   Дмитрий Алексеев</p>
+                  <form action="#" method="post" class="comments__form">
+                    <textarea name="comment" class="comments__field" placeholder="Напишите ваш комментарий"></textarea>
+                    <button type="submit" class="comments__send">Отправить</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="comments__person">
+            <img src="img/person-4.jpg" class="comment__img" alt="Дмитрий Алексеев" width="60" height="60">
+            <div class="comments__info">
+              <p class="comments__name">
+                Дмитрий Алексеев
+                <time datetime="2017-07-05T20:05:00+03:00" class="comments__time">05.07.2017 в 20:05</time>
+              </p>
+              <p class="comments__text">Интересно с ними поступают в Финляндии. Сначала мигранты наводнили Хельсинки и другие крупные для Финляндии города и местное население начало роптать. Политики поняли, что дело пахнет керосином, в крупных городах живет много избирателей и приняли меры: издали распоряжение, что получать пособие беженцы могут только по месту жительства, которое ему укажут местные власти. Если хочешь жить в другом месте - пожалуйста, работай, плати налоги, снимай жилье сам. А жилье выделяют в глубинке поближе к полярному кругу, где ночь по полгода и зима восемь месяцев. Беженцы южный народ, сами просят чтобы их отправили назад.</p>
+              <div class="comments__action">
+                <input type="checkbox" name="reply" id="comment-1" class="comments__reply">
+                <label for="comment-1" class="comments__label"></label>
+                <button type="button" class="comments__like">+</button>
+                <span class="comment__likecount">2</span>
+                <button type="button" class="comments__like comments__like--dislike">-</button>
+                <span class="comment__dislikecount">7</span>
+                <div class="comment__show">
+                  <img src="img/person-2.jpg" alt="Станислав Поло" class="comment__img" width="60" height="60">
+                  <p class="comments__name">Станислав Поло   >   Дмитрий Алексеев</p>
+                  <form action="#" method="post" class="comments__form">
+                    <textarea name="comment" class="comments__field" placeholder="Напишите ваш комментарий"></textarea>
+                    <button type="submit" class="comments__send">Отправить</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button type="button" class="comments__more">Показать еще</button>
+        </section>
+      </article>
+      
+      <section class="sidebar">
+        <h2 class="sidebar__title">Последние новости</h2>
+        <ul class="news__list news__list--column">
+          <li class="news__item">
+            <p class="news__top">
+              <span class="news__category">Образование</span>
+              <time datetime="2017-07-14T18:30:00+03:00" class="news__time">14.07.2017, 18:30</time>
+              <button class="news__flag">
+                <span class="visually-hidden">Выбрать новость</span>
+                <svg class="news__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21.14 14">
+                  <polygon class="news__fill" points="19 13 1 13 1 1 19 1 14 7 19 13"/>
+                </svg>
+              </button>
+            </p>
+            <a href="#" class="news__link">
+              <div class="news__picture">
+                <img src="img/news-6.jpg" alt="Новость" class="news__img" width="260" height="130">
+                <p class="news__number">№ 70</p>
+              </div>
+              <h2 class="news__title">Военные курсы в гражданских вузах освободят от призыва.</h2>
+              <p class="news__text">Военные курсы в гражданских вузах освободят от призыва.</p>
+            </a>
+          </li>
+          <li class="news__item">
+            <p class="news__top">
+              <span class="news__category">Закон и порядок</span>
+              <time datetime="2017-07-14T18:30:00+03:00" class="news__time">14.07.2017, 18:30</time>
+              <button class="news__flag">
+                <span class="visually-hidden">Выбрать новость</span>
+                <svg class="news__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21.14 14">
+                  <polygon class="news__fill" points="19 13 1 13 1 1 19 1 14 7 19 13"/>
+                </svg>
+              </button>
+            </p>
+            <a href="#" class="news__link">
+              <div class="news__picture">
+                <img src="img/news-7.jpg" alt="Новость" class="news__img" width="260" height="130">
+                <p class="news__number">№ 70</p>
+              </div>
+              <h2 class="news__title">Незаконная раздача земель может ударить чиновнику по карьере.</h2>
+              <p class="news__text">Незаконная раздача земель может ударить чиновнику по карьере.</p>
+            </a>
+          </li>
+          <li class="news__item">
+            <p class="news__top">
+              <span class="news__category">Образование</span>
+              <time datetime="2017-07-14T18:30:00+03:00" class="news__time">14.07.2017, 18:30</time>
+              <button class="news__flag">
+                <span class="visually-hidden">Выбрать новость</span>
+                <svg class="news__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21.14 14">
+                  <polygon class="news__fill" points="19 13 1 13 1 1 19 1 14 7 19 13"/>
+                </svg>
+              </button>
+            </p>
+            <a href="#" class="news__link">
+              <div class="news__picture">
+                <img src="img/news-8.jpg" alt="Новость" class="news__img" width="260" height="130">
+                <p class="news__number">№ 70</p>
+              </div>
+              <h2 class="news__title">Военные курсы в гражданских вузах освободят от призыва.</h2>
+              <p class="news__text">Военные курсы в гражданских вузах освободят от призыва.</p>
+            </a>
+          </li>
+        </ul>
+        
+        <div class="banner">
+          <a href="#" class="banner__link banner__link--news">
+            <img src="img/banner-news.jpg" alt="Реклама" class="banner__img" width="260" height="238">
+          </a>
+          <p class="banner__text">Реклама</p>
+        </div>
+        
+        <h2 class="sidebar__title">Краеведение</h2>
+        <ul class="news__list news__list--column">
+          <li class="news__item">
+            <p class="news__top">
+              <span class="news__category">Образование</span>
+              <time datetime="2017-07-14T18:30:00+03:00" class="news__time">14.07.2017, 18:30</time>
+              <button class="news__flag">
+                <span class="visually-hidden">Выбрать новость</span>
+                <svg class="news__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21.14 14">
+                  <polygon class="news__fill" points="19 13 1 13 1 1 19 1 14 7 19 13"/>
+                </svg>
+              </button>
+            </p>
+            <a href="#" class="news__link">
+              <div class="news__picture">
+                <img src="img/news-6.jpg" alt="Новость" class="news__img" width="260" height="130">
+                <p class="news__number">№ 70</p>
+              </div>
+              <h2 class="news__title">Военные курсы в гражданских вузах освободят от призыва.</h2>
+              <p class="news__text">Военные курсы в гражданских вузах освободят от призыва.</p>
+            </a>
+          </li>
+          <li class="news__item">
+            <p class="news__top">
+              <span class="news__category">Закон и порядок</span>
+              <time datetime="2017-07-14T18:30:00+03:00" class="news__time">14.07.2017, 18:30</time>
+              <button class="news__flag">
+                <span class="visually-hidden">Выбрать новость</span>
+                <svg class="news__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21.14 14">
+                  <polygon class="news__fill" points="19 13 1 13 1 1 19 1 14 7 19 13"/>
+                </svg>
+              </button>
+            </p>
+            <a href="#" class="news__link">
+              <div class="news__picture">
+                <img src="img/news-7.jpg" alt="Новость" class="news__img" width="260" height="130">
+                <p class="news__number">№ 70</p>
+              </div>
+              <h2 class="news__title">Незаконная раздача земель может ударить чиновнику по карьере.</h2>
+              <p class="news__text">Незаконная раздача земель может ударить чиновнику по карьере.</p>
+            </a>
+          </li>
+          <li class="news__item">
+            <p class="news__top">
+              <span class="news__category">Образование</span>
+              <time datetime="2017-07-14T18:30:00+03:00" class="news__time">14.07.2017, 18:30</time>
+              <button class="news__flag">
+                <span class="visually-hidden">Выбрать новость</span>
+                <svg class="news__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21.14 14">
+                  <polygon class="news__fill" points="19 13 1 13 1 1 19 1 14 7 19 13"/>
+                </svg>
+              </button>
+            </p>
+            <a href="#" class="news__link">
+              <div class="news__picture">
+                <img src="img/news-8.jpg" alt="Новость" class="news__img" width="260" height="130">
+                <p class="news__number">№ 70</p>
+              </div>
+              <h2 class="news__title">Военные курсы в гражданских вузах освободят от призыва.</h2>
+              <p class="news__text">Военные курсы в гражданских вузах освободят от призыва.</p>
+            </a>
+          </li>
+        </ul>
+        
+        <div class="banner">
+          <a href="#" class="banner__link banner__link--news">
+            <img src="img/banner-news.jpg" alt="Реклама" class="banner__img" width="260" height="238">
+          </a>
+          <p class="banner__text">Реклама</p>
+        </div>
+      </section>
+    </div>
+  </main>
+  
+    <footer class="footer">
+    <div class="wrapper">
+      <p class="footer__copyright">© 2017 Газета «Выборг»</p>
+      <ul class="social">
+          <li class="social__item">
+            <a href="#" class="social__link social__link--vk"><span class="visually-hidden">В контакте</span></a>
+          </li>
+          <li class="social__item">
+            <a href="#" class="social__link social__link--fb"><span class="visually-hidden">Фейсбук</span></a>
+          </li>
+          <li class="social__item">
+            <a href="#" class="social__link social__link--in"><span class="visually-hidden">Инстаграм</span></a>
+          </li>
+          <li class="social__item">
+            <a href="#" class="social__link social__link--ok"><span class="visually-hidden">Одноклассники</span></a>
+          </li>
+          <li class="social__item">
+            <a href="#" class="social__link social__link--tw"><span class="visually-hidden">Твиттер</span></a>
+          </li>
+          <li class="social__item">
+            <a href="#" class="social__link social__link--mk"><span class="visually-hidden">Мой круг</span></a>
+          </li>
+          <li class="social__item">
+            <a href="#" class="social__link social__link--tg"><span class="visually-hidden">Телеграм</span></a>
+          </li>
+          <li class="social__item">
+            <a href="#" class="social__link social__link--gp"><span class="visually-hidden">Google Plus</span></a>
+          </li>
+          <li class="social__item">
+            <a href="#" class="social__link social__link--yt"><span class="visually-hidden">YouTube</span></a>
+          </li>
+          <li class="social__item">
+            <a href="#" class="social__link social__link--wa"><span class="visually-hidden">WhatsApp</span></a>
+          </li>
+        </ul>
+        <div class="user">
+          <a href="#" class="user__link user__link--footer"><span>Вход</span></a>
+          <a href="#" class="user__link user__link--footer"><span>Регистрация</span></a>
+        </div>
+      <div class="footer__developers">
+        <p class="footer__design">
+          <span>Сайт создан в </span>
+          <a href="http://gs-inc.ru/" class="footer__link">Студии Сархана Громова</a>
+        </p>
+        <div class="footer__icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 79.11 39.35">
+            <rect fill="#fff" width="37.56" height="37.35"/>
+            <rect fill="#fff" x="38.98" width="36.13" height="37.35"/>
+            <path class="footer__logo" d="M81.71,138.79v-0.47H77.54v0.47h0.68c0.42,0,.53.12,0.53,0.76v0.9a1.19,1.19,0,0,1-1.18,1.38c-1.3,0-2.28-1-2.28-3.83,0-3.33.91-4.08,2.17-4.08,0.79,0,2,.49,2.47,2.94h0.48l-0.18-3.41H79.8l-0.34,1a2.84,2.84,0,0,0-2.18-1c-2.46,0-4.05,1.87-4.05,4.66s1.85,4.35,4,4.35a3.08,3.08,0,0,0,2.41-1.25l0.62,1.27h0.47v-2.93c0-.64.11-0.76,0.53-0.76h0.43Z" transform="translate(-58.56 -119.09)"/>
+            <path class="footer__logo" d="M119,139.72c0-1.7-1.42-2.26-2.77-2.65s-2.41-.71-2.41-1.79a1.38,1.38,0,0,1,1.5-1.38,2.88,2.88,0,0,1,2.8,2.72h0.47l-0.14-3.18h-0.37l-0.31.92a3.3,3.3,0,0,0-2.44-.94c-1.74,0-3,.9-3,2.66s1.37,2.27,2.74,2.69c1.2,0.36,2.32.71,2.32,1.82,0,0.94-.85,1.36-1.87,1.36a3.2,3.2,0,0,1-3.06-3H112l0.22,3.45h0.37l0.3-1a3.5,3.5,0,0,0,2.59,1c1.68,0,3.53-.89,3.53-2.72" transform="translate(-58.56 -119.09)"/>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+  <script src="js/swiper.min.js"></script>
+  <script>
+    var swiper = new Swiper(".swiper-container", {
+      nextButton: ".swiper-button-next",
+      prevButton: ".swiper-button-prev",
+    });
+  </script>
+</body>
+</html>

@@ -4,6 +4,7 @@
 
 .banner__link {
   display: block;
+  position: relative;
   width: 100%;
   overflow: hidden;
   
@@ -22,4 +23,75 @@
 .banner__text {
   color: @grey;
   margin: 0;
+}
+
+.banner__title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  width: 100%;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 2px;
+}
+
+.banner__info {
+  width: 975px;
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+  &--part {
+    width: 515px;
+    height: 100%;
+    left: 74%;
+  }
+}
+
+.banner__name {
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-size: 18px;
+  color: #000;
+  line-height: 28px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.banner__list {
+  list-style-type: disc;
+  padding-left: 15px;
+  line-height: 18px;
+  color: #000;
+}
+
+.banner__phone {
+  font-size: 30px;
+  padding-top: 20px;
+  margin: 0;
+  color: #000;
+  background-image: url(../img/chess.png);
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+.banner__description {
+  color: #fff;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  letter-spacing: 2px;
+  
+  span {
+    font-size: 14px;
+    letter-spacing: normal;
+  }
 }
