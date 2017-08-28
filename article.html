@@ -117,7 +117,7 @@
       
         <article class="article">
           <h1 class="article__h1">Рыцари, драконы, прекрасные дамы…</h1>
-          <p class="news__top">
+          <p class="news__top news__top--article">
             <time datetime="2017-07-05T08:18:00+03:00" class="news__time">05.07.2017, 08:18</time>
             <button class="news__flag">
               <span class="visually-hidden">Выбрать новость</span>
@@ -220,6 +220,12 @@
                 </div>
               </div>
             </div>
+            
+            <div class="slider__choice">
+              <button type="button" class="slider__btn slider__btn--prev"><span class="visually-hidden">Назад</span></button>
+              <input class="slider__range" type="range" value="1" min="0" max="4" step="1">
+              <button type="button" class="slider__btn slider__btn--next"><span class="visually-hidden">Вперед</span></button>
+            </div>
           </section>
 
           <p class="article__text">Две выставки, подчиненные одной теме, открылись в Выборгском замке Мария ЛЮБИМОВА и Вера ЛЕВИНА живут в Петербурге и знакомы с детских лет. Обе окончили академический художественный лицей им. Иогансона, а затем – Академию художеств. Обе увлекаются культурой Средневековья, правда, каждая на свой лад.</p>
@@ -320,7 +326,7 @@
           </form>
           <p class="comments__total"><span>160</span> комментариев</p>
           <div class="comments__person">
-            <img src="img/person-1.jpg" class="comment__img" alt="Дмитрий Алексеев" width="60" height="60">
+            <img src="img/person-1.jpg" class="comments__img" alt="Дмитрий Алексеев" width="60" height="60">
             <div class="comments__info">
               <p class="comments__name">
                 Дмитрий Алексеев
@@ -328,15 +334,17 @@
               </p>
               <p class="comments__text">Интересно с ними поступают в Финляндии. Сначала мигранты наводнили Хельсинки и другие крупные для Финляндии города и местное население начало роптать. Политики поняли, что дело пахнет керосином, в крупных городах живет много избирателей и приняли меры: издали распоряжение, что получать пособие беженцы могут только по месту жительства, которое ему укажут местные власти. Если хочешь жить в другом месте - пожалуйста, работай, плати налоги, снимай жилье сам. А жилье выделяют в глубинке поближе к полярному кругу, где ночь по полгода и зима восемь месяцев. Беженцы южный народ, сами просят чтобы их отправили назад.</p>
               <div class="comments__action">
-                <input type="checkbox" name="reply" id="comment-1" class="comments__reply">
+                <input type="checkbox" name="reply" id="comment-1" class="comments__reply" checked>
                 <label for="comment-1" class="comments__label"></label>
                 <button type="button" class="comments__like">+</button>
-                <span class="comment__likecount">2</span>
+                <span class="comments__count comments__count--like">2</span>
                 <button type="button" class="comments__like comments__like--dislike">-</button>
-                <span class="comment__dislikecount">7</span>
-                <div class="comment__show">
-                  <img src="img/person-2.jpg" alt="Станислав Поло" class="comment__img" width="60" height="60">
-                  <p class="comments__name">Станислав Поло   >   Дмитрий Алексеев</p>
+                <span class="comments__count comments__count--dislike">7</span>
+                <div class="comments__show">
+                  <div class="comments__top">
+                    <img src="img/person-2.jpg" alt="Станислав Поло" class="comments__img" width="60" height="60">
+                    <p class="comments__name">Станислав Поло&emsp;>&emsp;Дмитрий Алексеев</p>
+                  </div>
                   <form action="#" method="post" class="comments__form">
                     <textarea name="comment" class="comments__field" placeholder="Напишите ваш комментарий"></textarea>
                     <button type="submit" class="comments__send">Отправить</button>
@@ -346,7 +354,7 @@
             </div>
           </div>
           <div class="comments__person">
-            <img src="img/person-3.jpg" class="comment__img" alt="Дмитрий Алексеев" width="60" height="60">
+            <img src="img/person-3.jpg" class="comments__img" alt="Дмитрий Алексеев" width="60" height="60">
             <div class="comments__info">
               <p class="comments__name">
                 Дмитрий Алексеев
@@ -354,15 +362,17 @@
               </p>
               <p class="comments__text">Интересно с ними поступают в Финляндии. Сначала мигранты наводнили Хельсинки и другие крупные для Финляндии города и местное население начало роптать. Политики поняли, что дело пахнет керосином, в крупных городах живет много избирателей и приняли меры: издали распоряжение, что получать пособие беженцы могут только по месту жительства, которое ему укажут местные власти. Если хочешь жить в другом месте - пожалуйста, работай, плати налоги, снимай жилье сам. А жилье выделяют в глубинке поближе к полярному кругу, где ночь по полгода и зима восемь месяцев. Беженцы южный народ, сами просят чтобы их отправили назад.</p>
               <div class="comments__action">
-                <input type="checkbox" name="reply" id="comment-1" class="comments__reply">
-                <label for="comment-1" class="comments__label"></label>
+                <input type="checkbox" name="reply" id="comment-2" class="comments__reply">
+                <label for="comment-2" class="comments__label"></label>
                 <button type="button" class="comments__like">+</button>
-                <span class="comment__likecount">2</span>
+                <span class="comment__count comments__count--like">2</span>
                 <button type="button" class="comments__like comments__like--dislike">-</button>
-                <span class="comment__dislikecount">7</span>
-                <div class="comment__show">
-                  <img src="img/person-2.jpg" alt="Станислав Поло" class="comment__img" width="60" height="60">
-                  <p class="comments__name">Станислав Поло   >   Дмитрий Алексеев</p>
+                <span class="comment__count comments__count--dislike">7</span>
+                <div class="comments__show">
+                  <div class="comments__top">
+                    <img src="img/person-2.jpg" alt="Станислав Поло" class="comments__img" width="60" height="60">
+                    <p class="comments__name">Станислав Поло&emsp;>&emsp;Дмитрий Алексеев</p>
+                  </div>
                   <form action="#" method="post" class="comments__form">
                     <textarea name="comment" class="comments__field" placeholder="Напишите ваш комментарий"></textarea>
                     <button type="submit" class="comments__send">Отправить</button>
@@ -372,7 +382,7 @@
             </div>
           </div>
           <div class="comments__person">
-            <img src="img/person-4.jpg" class="comment__img" alt="Дмитрий Алексеев" width="60" height="60">
+            <img src="img/person-4.jpg" class="comments__img" alt="Дмитрий Алексеев" width="60" height="60">
             <div class="comments__info">
               <p class="comments__name">
                 Дмитрий Алексеев
@@ -380,15 +390,17 @@
               </p>
               <p class="comments__text">Интересно с ними поступают в Финляндии. Сначала мигранты наводнили Хельсинки и другие крупные для Финляндии города и местное население начало роптать. Политики поняли, что дело пахнет керосином, в крупных городах живет много избирателей и приняли меры: издали распоряжение, что получать пособие беженцы могут только по месту жительства, которое ему укажут местные власти. Если хочешь жить в другом месте - пожалуйста, работай, плати налоги, снимай жилье сам. А жилье выделяют в глубинке поближе к полярному кругу, где ночь по полгода и зима восемь месяцев. Беженцы южный народ, сами просят чтобы их отправили назад.</p>
               <div class="comments__action">
-                <input type="checkbox" name="reply" id="comment-1" class="comments__reply">
-                <label for="comment-1" class="comments__label"></label>
+                <input type="checkbox" name="reply" id="comment-3" class="comments__reply">
+                <label for="comment-3" class="comments__label"></label>
                 <button type="button" class="comments__like">+</button>
-                <span class="comment__likecount">2</span>
+                <span class="comments__count comments__count--like">2</span>
                 <button type="button" class="comments__like comments__like--dislike">-</button>
-                <span class="comment__dislikecount">7</span>
-                <div class="comment__show">
-                  <img src="img/person-2.jpg" alt="Станислав Поло" class="comment__img" width="60" height="60">
-                  <p class="comments__name">Станислав Поло   >   Дмитрий Алексеев</p>
+                <span class="comments__count comments__count--dislike">7</span>
+                <div class="comments__show">
+                  <div class="comments__top">
+                    <img src="img/person-2.jpg" alt="Станислав Поло" class="comments__img" width="60" height="60">
+                    <p class="comments__name">Станислав Поло&emsp;>&emsp;Дмитрий Алексеев</p>
+                  </div>
                   <form action="#" method="post" class="comments__form">
                     <textarea name="comment" class="comments__field" placeholder="Напишите ваш комментарий"></textarea>
                     <button type="submit" class="comments__send">Отправить</button>
@@ -397,7 +409,9 @@
               </div>
             </div>
           </div>
-          <button type="button" class="comments__more">Показать еще</button>
+          <div class="comments__btn">
+            <button type="button" class="comments__more">Показать еще</button>
+          </div>
         </section>
       </div>
       
@@ -706,10 +720,11 @@
       paginationType: 'fraction'
     });
     var galleryThumbs = new Swiper('.gallery-thumbs', {
-        spaceBetween: 10,
-        slidesPerView: 4,
-        touchRatio: 0.2,
-        slideToClickedSlide: true
+      spaceBetween: 10,
+      slidesPerView: 4,
+      touchRatio: 0.2,
+      slideToClickedSlide: true,
+      centeredSlides: true
     });
     galleryTop.params.control = galleryThumbs;
     galleryThumbs.params.control = galleryTop;
