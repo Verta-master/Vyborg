@@ -1,0 +1,39 @@
+.citation {
+  .reset;
+  padding: 28px 50px 47px 32px;
+  margin-bottom: 30px;
+  border: 1px solid @blue-bg;
+  position: relative;
+  
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 35px;
+    height: 42px;
+    background-image: url(../img/arrow-double.svg);
+    background-repeat: no-repeat;
+  }
+  
+  &::before {
+    left: -20px;
+    transform: translateY(-50%);
+  }
+  
+  &::after {
+    right: -20px;
+    transform: rotate(180deg) translateY(50%);
+  }
+}
+
+.citation__source {
+  display: block;
+  position: absolute;
+  bottom: -7px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #fff;
+  padding: 0 20px;
+  color: @grey;
+}

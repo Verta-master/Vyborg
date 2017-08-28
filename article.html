@@ -48,8 +48,8 @@
           </li>
         </ul>
         <div class="user">
-          <a href="#" class="user__link"><span>Вход</span></a>
-          <a href="#" class="user__link"><span>Регистрация</span></a>
+          <a href="#" class="user__link sign"><span>Вход</span></a>
+          <a href="#" class="user__link sign"><span>Регистрация</span></a>
         </div>
       </div>
     </div>
@@ -107,112 +107,155 @@
   </header>
   
   <main>
-    <div class="wrapper">
-      <nav class="breadcrumbs">
-        <a href="#" class="breadcrumbs__link">Главная</a>
-        <a href="#" class="breadcrumbs__link">Краеведение</a>
-        <a href="#" class="breadcrumbs__link">Рыцари, драконы...</a>
-      </nav>
+    <div class="wrapper wrapper--article">
+      <div class="wrapper__column">
+        <nav class="breadcrumbs">
+          <a href="#" class="breadcrumbs__link">Главная</a>
+          <a href="#" class="breadcrumbs__link">Краеведение</a>
+          <span class="breadcrumbs__link breadcrumbs__link--active">Рыцари, драконы...</span>
+        </nav>
       
-      <article class="article">
-        <h1 class="article__h1">Рыцари, драконы, прекрасные дамы…</h1>
-        <p class="news__top">
-          <time datetime="2017-07-14T18:30:00+03:00" class="news__time">14.07.2017, 18:30</time>
-          <button class="news__flag">
-            <span class="visually-hidden">Выбрать новость</span>
-            <svg class="news__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21.14 14">
-              <polygon class="news__fill" points="19 13 1 13 1 1 19 1 14 7 19 13"/>
-            </svg>
-          </button>
-        </p>
-        <figure>
-          <div class="news__picture">
-            <img src="img/article-1.jpg" alt="Статья" class="news__img" width="960" height="720">
-            <p class="news__number">№ 40</p>
-          </div>
-          <figcaption class="article__photo">
-            Участники мероприятия.
-            <span>Фото: Аристарх Васютин.</span>
-          </figcaption>
-        </figure>
-        <p class="article__text">Две выставки, подчиненные одной теме, открылись в Выборгском замке Мария Любимова и Вера Левина живут в Петербурге и знакомы с детских лет. Обе окончили академический художественный лицей им. Иогансона, а затем – Академию художеств. Обе увлекаются культурой Средневековья, правда, каждая на свой лад.</p>
-        <blockquote class="citation">
-          — Фестиваль начал свою историю в 2014 году в Виролахти. Но у нас всегда была мечта  обязательно приехать в Выборг. Мы находимся настолько рядом, что выступить у вас было только делом времени, тем более что для музыки не существует границ. И мы очень рады, что наша мечта наконец сбылась,  отметила учредительный директор Сири Ахопелто (Siru Ahopelto)
-          <span class="citation__source">Сергей Попов. Генерал ВВС РФ</span>
-        </blockquote>
-        
-        <section class="slider">
-          <div class="swiper-container">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <img src="img/slide-1.jpg" alt="Слайд 1" class="slider__img" width="1160" height="280">
-                  <p class="slider__label">Спецпроект 2017</p>
-                  <div class="slider__info">
-                    <p class="slider__text">
-                      <span class="slider__title"><b>ВЫБОРГСКИЙ ЗАМОК<br>ОТ А ДО Я</b></span>
-                      Цикл статей, посвященных Выборгскому замку
-                    </p>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <img src="img/slide-1.jpg" alt="Слайд 1" class="slider__img" width="1160" height="280">
-                  <p class="slider__label">Спецпроект 2017</p>
-                  <div class="slider__info">
-                    <p class="slider__text">
-                      <span class="slider__title"><b>ВЫБОРГСКИЙ ЗАМОК<br>ОТ А ДО Я</b></span>
-                      Цикл статей, посвященных Выборгскому замку
-                    </p>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <img src="img/slide-1.jpg" alt="Слайд 1" class="slider__img" width="1160" height="280">
-                  <p class="slider__label">Спецпроект 2017</p>
-                  <div class="slider__info">
-                    <p class="slider__text">
-                      <span class="slider__title"><b>ВЫБОРГСКИЙ ЗАМОК<br>ОТ А ДО Я</b></span>
-                      Цикл статей, посвященных Выборгскому замку
-                    </p>
-                  </div>
-                </div>
-            </div>
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
-          </div>
-        </section>
-        
-        <p class="article__text">Две выставки, подчиненные одной теме, открылись в Выборгском замке Мария ЛЮБИМОВА и Вера ЛЕВИНА живут в Петербурге и знакомы с детских лет. Обе окончили академический художественный лицей им. Иогансона, а затем – Академию художеств. Обе увлекаются культурой Средневековья, правда, каждая на свой лад.</p>
-        
-        <section class="video">
-          
-          <p class="article__photo">
-            Участники мероприятия.
-            <span>Фото: Аристарх Васютин.</span>
+        <article class="article">
+          <h1 class="article__h1">Рыцари, драконы, прекрасные дамы…</h1>
+          <p class="news__top">
+            <time datetime="2017-07-05T08:18:00+03:00" class="news__time">05.07.2017, 08:18</time>
+            <button class="news__flag">
+              <span class="visually-hidden">Выбрать новость</span>
+              <svg class="news__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21.14 14">
+                <polygon class="news__fill" points="19 13 1 13 1 1 19 1 14 7 19 13"/>
+              </svg>
+            </button>
           </p>
-        </section>
-        <p class="anounce">
-          Первый концерт фестиваля камерной музыки Юго-Восточной Финляндии <a href="#" class="anounce__link">«Музыка без границ»</a> прошел в библиотеке Алвара Аалто. Богатая история совместного международного сотрудничества между финскими и российскими городами создали предпосылки для организации концерта в Выборге.
-        </p>
-        
-        <section class="audio">
-          <a href="#" class="audio__link">Рыцарский гимн</a>
-          
-        </section>
-        
-        <p class="article__text">Две выставки, подчиненные одной теме, открылись в Выборгском замке Мария ЛЮБИМОВА и Вера ЛЕВИНА живут в Петербурге и знакомы с детских лет. Обе окончили академический художественный лицей им. Иогансона, а затем – Академию художеств. Обе увлекаются культурой Средневековья, правда, каждая на свой лад. Фестиваль начал свою историю в 2014 году в Виролахти. Но у нас всегда была мечта  обязательно приехать в Выборг. Мы находимся настолько рядом, что выступить у вас было только делом времени, тем более что для музыки не существует границ. И мы очень рады, что наша мечта наконец сбылась, — отметила учредительный директор Сири Ахопелто (Siru Ahopelto) на открытии фестиваля</p>
-        
-        <ul class="download">
-          <li class="download__item">
-            <a href="#" class="download__link" download>Устав муниципального образования «Выборгский район» Лен. области</a>
-            <span class="download__size">PDF, 5 МБ</span>
-          </li>
-          <li class="download__item">
-            <a href="#" class="download__link" download>Устав муниципального образования «Выборгский район» Лен. области</a>
-            <span class="download__size">DOC, 5 МБ</span>
-          </li>
-        </ul>
-        
-        <div class="map"></div>
-        
+          <figure>
+            <div class="news__picture news__picture--article">
+              <img src="img/article-1.jpg" alt="Статья" class="news__img" width="960" height="720">
+              <p class="news__number">№ 40</p>
+            </div>
+            <figcaption class="article__photo">
+              Участники мероприятия.
+              <span>Фото: Аристарх Васютин.</span>
+            </figcaption>
+          </figure>
+          <p class="article__text">Две выставки, подчиненные одной теме, открылись в Выборгском замке Мария Любимова и Вера Левина живут в Петербурге и знакомы с детских лет. Обе окончили академический художественный лицей им. Иогансона, а затем – Академию художеств. Обе увлекаются культурой Средневековья, правда, каждая на свой лад.</p>
+          <blockquote class="citation">
+            — Фестиваль начал свою историю в 2014 году в Виролахти. Но у нас всегда была мечта  обязательно приехать в Выборг. Мы находимся настолько рядом, что выступить у вас было только делом времени, тем более что для музыки не существует границ. И мы очень рады, что наша мечта наконец сбылась,  отметила учредительный директор Сири Ахопелто (Siru Ahopelto)
+            <span class="citation__source">Сергей Попов. Генерал ВВС РФ</span>
+          </blockquote>
+
+          <section class="slider slider--column">
+            <div class="swiper-container gallery-top">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <figure>
+                    <div class="slider__figure">
+                      <img src="img/article-1.jpg" alt="Слайд 1" class="slider__img" width="760" height="380">
+                    </div>
+                    <figcaption class="article__photo">
+                      Участники мероприятия.
+                      <span>Фото: Аристарх Васютин.</span>
+                    </figcaption>
+                  </figure>
+                </div>
+                <div class="swiper-slide">
+                  <figure>
+                    <div class="slider__figure">
+                      <img src="img/article-2.jpg" alt="Слайд 1" class="slider__img" width="760" height="380">
+                    </div>
+                    <figcaption class="article__photo">
+                      Участники мероприятия.
+                      <span>Фото: Аристарх Васютин.</span>
+                    </figcaption>
+                  </figure>
+                </div>
+                <div class="swiper-slide">
+                  <figure>
+                    <div class="slider__figure">
+                      <img src="img/article-3.jpg" alt="Слайд 1" class="slider__img" width="760" height="380">
+                    </div>
+                    <figcaption class="article__photo">
+                      Участники мероприятия.
+                      <span>Фото: Аристарх Васютин.</span>
+                    </figcaption>
+                  </figure>
+                </div>
+                <div class="swiper-slide">
+                  <figure>
+                    <div class="slider__figure">
+                      <img src="img/article-4.jpg" alt="Слайд 1" class="slider__img" width="760" height="380">
+                    </div>
+                    <figcaption class="article__photo">
+                      Участники мероприятия.
+                      <span>Фото: Аристарх Васютин.</span>
+                    </figcaption>
+                  </figure>
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+            </div>
+            
+<!--  Slider thumbnails          -->
+            <div class="swiper-container gallery-thumbs">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="slider__thumb">
+                    <img src="img/article-1.jpg" alt="Слайд 1" class="slider__img" width="160" height="80">
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="slider__thumb">
+                    <img src="img/article-2.jpg" alt="Слайд 1" class="slider__img" width="160" height="80">
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="slider__thumb">
+                    <img src="img/article-3.jpg" alt="Слайд 1" class="slider__img" width="160" height="80">
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="slider__thumb">
+                    <img src="img/article-4.jpg" alt="Слайд 1" class="slider__img" width="160" height="80">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <p class="article__text">Две выставки, подчиненные одной теме, открылись в Выборгском замке Мария ЛЮБИМОВА и Вера ЛЕВИНА живут в Петербурге и знакомы с детских лет. Обе окончили академический художественный лицей им. Иогансона, а затем – Академию художеств. Обе увлекаются культурой Средневековья, правда, каждая на свой лад.</p>
+
+          <section class="video">
+
+            <p class="article__photo">
+              Участники мероприятия.
+              <span>Фото: Аристарх Васютин.</span>
+            </p>
+          </section>
+          <p class="anounce">
+            Первый концерт фестиваля камерной музыки Юго-Восточной Финляндии <a href="#" class="anounce__link">«Музыка без границ»</a> прошел в библиотеке Алвара Аалто. Богатая история совместного международного сотрудничества между финскими и российскими городами создали предпосылки для организации концерта в Выборге.
+          </p>
+
+          <section class="audio">
+            <a href="#" class="audio__link">Рыцарский гимн</a>
+
+          </section>
+
+          <p class="article__text">Две выставки, подчиненные одной теме, открылись в Выборгском замке Мария ЛЮБИМОВА и Вера ЛЕВИНА живут в Петербурге и знакомы с детских лет. Обе окончили академический художественный лицей им. Иогансона, а затем – Академию художеств. Обе увлекаются культурой Средневековья, правда, каждая на свой лад. Фестиваль начал свою историю в 2014 году в Виролахти. Но у нас всегда была мечта  обязательно приехать в Выборг. Мы находимся настолько рядом, что выступить у вас было только делом времени, тем более что для музыки не существует границ. И мы очень рады, что наша мечта наконец сбылась, — отметила учредительный директор Сири Ахопелто (Siru Ahopelto) на открытии фестиваля</p>
+
+          <ul class="download">
+            <li class="download__item">
+              <a href="#" class="download__link" download>Устав муниципального образования «Выборгский район» Лен. области</a>
+              <span class="download__size">PDF, 5 МБ</span>
+            </li>
+            <li class="download__item">
+              <a href="#" class="download__link" download>Устав муниципального образования «Выборгский район» Лен. области</a>
+              <span class="download__size">DOC, 5 МБ</span>
+            </li>
+          </ul>
+
+          <div class="map"></div>
+        </article>
+
         <div class="banner">
           <a href="#" class="banner__link banner__link--wide">
             <img src="img/banner-wide-1.jpg" alt="Реклама" class="banner__img" width="1160" height="135">
@@ -306,7 +349,7 @@
           </div>
           <button type="button" class="comments__more">Показать еще</button>
         </section>
-      </article>
+      </div>
       
       <section class="sidebar">
         <h2 class="sidebar__title">Последние новости</h2>
@@ -454,7 +497,7 @@
     </div>
   </main>
   
-    <footer class="footer">
+  <footer class="footer">
     <div class="wrapper">
       <p class="footer__copyright">© 2017 Газета «Выборг»</p>
       <ul class="social">
@@ -490,8 +533,8 @@
           </li>
         </ul>
         <div class="user">
-          <a href="#" class="user__link user__link--footer"><span>Вход</span></a>
-          <a href="#" class="user__link user__link--footer"><span>Регистрация</span></a>
+          <a href="#" class="user__link user__link--footer sign"><span>Вход</span></a>
+          <a href="#" class="user__link user__link--footer sign"><span>Регистрация</span></a>
         </div>
       <div class="footer__developers">
         <p class="footer__design">
@@ -510,11 +553,121 @@
     </div>
   </footer>
   
+  <div style="display: none;">
+    <div class="box-modal" id="enterModal">
+      <div class="box-modal_close arcticmodal-close"><span class="visually-hidden">закрыть</span></div>
+      <input type="radio" name="choice" id="enter" checked class="box-modal__choice box-modal__choice--enter">
+      <label for="enter" class="box-modal__label box-modal__label--enter">Вход</label>
+      <input type="radio" name="choice" id="reg" class="box-modal__choice box-modal__choice--reg">
+      <label for="reg" class="box-modal__label box-modal__label--reg">Регистрация</label>
+    <!--  Sign in    -->
+      <div class="box-modal__body box-modal__enter">
+        <form action="#" method="post" class="box-modal__form">
+          <div class="box-modal__field">
+            <label for="email" class="box-modal__text">Эл. почта:</label>
+            <input type="email" name="email" id="email" class="box-modal__input" placeholder="panteleimonv@yandex.ru" required>
+          </div>
+          <div class="box-modal__field">
+            <input type="checkbox" name="icon" id="icon" class="box-modal__pass">
+            <label for="icon" class="box-modal__toggle"><span class="visually-hidden">Видимость пароля</span></label>
+            <label for="password" class="box-modal__text">Пароль:</label>
+            <input type="password" name="password" id="password" class="box-modal__input" placeholder="h2yjdfh9&dfv2yu">
+          </div>
+          <button type="submit" class="box-modal__btn">Войти</button>
+          <p class="box-modal__social">Авторизироваться через соц. сети:</p>
+          <ul class="social">
+            <li class="social__item">
+              <a href="#" class="social__link social__link--vk"><span class="visually-hidden">В контакте</span></a>
+            </li>
+            <li class="social__item">
+              <a href="#" class="social__link social__link--fb"><span class="visually-hidden">Фейсбук</span></a>
+            </li>
+            <li class="social__item">
+              <a href="#" class="social__link social__link--in"><span class="visually-hidden">Инстаграм</span></a>
+            </li>
+            <li class="social__item">
+              <a href="#" class="social__link social__link--ok"><span class="visually-hidden">Одноклассники</span></a>
+            </li>
+            <li class="social__item">
+              <a href="#" class="social__link social__link--tw"><span class="visually-hidden">Твиттер</span></a>
+            </li>
+          </ul>
+        </form>
+        <a href="#" class="box-modal__policy">Политика конфиденциальности</a>
+      </div>
+    <!--   Registration   -->
+      <div class="box-modal__body box-modal__reg">
+        <form action="#" method="post" class="box-modal__form">
+          <div class="box-modal__field">
+            <label for="email-reg" class="box-modal__text">Эл. почта:</label>
+            <input type="email" name="email-reg" id="email-reg" class="box-modal__input" placeholder="panteleimonv@yandex.ru" required>
+          </div>
+          <div class="box-modal__field">
+            <input type="checkbox" name="icon-reg" id="icon-reg" class="box-modal__pass" checked>
+            <label for="icon-reg" class="box-modal__toggle"><span class="visually-hidden">Видимость пароля</span></label>
+            <label for="password-reg" class="box-modal__text">Придумайте пароль:</label>
+            <input type="password" name="password-reg" id="password-reg" class="box-modal__input" placeholder="************">
+          </div>
+          <button type="submit" class="box-modal__btn">Зарегистрироваться</button>
+          <p class="box-modal__social">Авторизироваться через соц. сети:</p>
+          <ul class="social">
+            <li class="social__item">
+              <a href="#" class="social__link social__link--vk"><span class="visually-hidden">В контакте</span></a>
+            </li>
+            <li class="social__item">
+              <a href="#" class="social__link social__link--fb"><span class="visually-hidden">Фейсбук</span></a>
+            </li>
+            <li class="social__item">
+              <a href="#" class="social__link social__link--in"><span class="visually-hidden">Инстаграм</span></a>
+            </li>
+            <li class="social__item">
+              <a href="#" class="social__link social__link--ok"><span class="visually-hidden">Одноклассники</span></a>
+            </li>
+            <li class="social__item">
+              <a href="#" class="social__link social__link--tw"><span class="visually-hidden">Твиттер</span></a>
+            </li>
+          </ul>
+        </form>
+        <a href="#" class="box-modal__policy">Политика конфиденциальности</a>
+      </div>
+    </div>
+  </div>
+  
+  <script src="js/jquery-3.2.1.min.js"></script>
+  <script src="js/jquery.arcticmodal-0.3.min.js"></script>
   <script src="js/swiper.min.js"></script>
+  
+<!-- Slider -->
   <script>
-    var swiper = new Swiper(".swiper-container", {
+    var galleryTop = new Swiper('.gallery-top', {
       nextButton: ".swiper-button-next",
       prevButton: ".swiper-button-prev",
+      pagination: '.swiper-pagination',
+      paginationType: 'fraction'
+    });
+    var galleryThumbs = new Swiper('.gallery-thumbs', {
+        spaceBetween: 10,
+        slidesPerView: 4,
+        touchRatio: 0.2,
+        slideToClickedSlide: true
+    });
+    galleryTop.params.control = galleryThumbs;
+    galleryThumbs.params.control = galleryTop;
+  </script>
+  
+<!-- Modal window -->
+  <script>
+    $(".sign").click(function(){
+      $(function(){
+        $('#enterModal').arcticmodal({
+          overlay: {
+          css: {
+            backgroundColor: "#000",
+            opacity: .8
+            }
+          }
+        });
+      });
     });
   </script>
 </body>

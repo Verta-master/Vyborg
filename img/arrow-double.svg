@@ -1,0 +1,18 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35 41.74">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+
+      .cls-2 {
+        fill: #41558c;
+      }
+    </style>
+  </defs>
+  <title>arrow-double</title>
+  <g>
+    <rect class="cls-1" width="35" height="41.74"/>
+    <path class="cls-2" d="M59.91,915.35l1.35-1.09-7.54-9.83L61,895l-1.35-1L48.52,904.73Zm7.86-.1,1.25-1-5.72-9.83,5.41-9.31-1.3-1-8.79,10.67Z" transform="translate(-42.5 -883.79)"/>
+  </g>
+</svg>

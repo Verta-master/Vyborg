@@ -1,0 +1,38 @@
+.breadcrumbs {
+  padding: 20px 0 10px;
+}
+
+.breadcrumbs__link {
+  color: @blue-bg;
+  margin-right: 20px;
+  text-decoration: none;
+  border-bottom: 1px solid @blue-bg;
+  position: relative;
+  
+  &:hover,
+  &:active {
+    opacity: 0.8;
+  }
+  
+  &::after {
+    content: ">";
+    position: absolute;
+    top: 2px;
+    right: -15px;
+    color: @grey;
+  }
+  
+  &--active {
+    color: @grey;
+    border-bottom: none;
+    
+    &:hover,
+    &:active {
+      opacity: 1;
+    }
+    
+    &::after {
+      display: none;
+    }
+  }
+}
