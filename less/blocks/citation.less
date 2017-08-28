@@ -27,6 +27,36 @@
   }
 }
 
+.citation--info {
+  padding: 25px 30px;
+  font-size: 18px;
+  line-height: 22px;
+  
+  &::before,
+  &::after {
+    width: 20px;
+    height: 43px;
+    background-image: url(../../img/rumb.svg);
+  }
+  
+  &::before {
+    left: -10px;
+  }
+  
+  &::after {
+    right: -10px;
+  }
+}
+
+.citation__link {
+  color: @blue-bg;
+  
+  &:hover,
+  &:active {
+    opacity: 0.8;
+  }
+}
+
 .citation__source {
   display: block;
   position: absolute;

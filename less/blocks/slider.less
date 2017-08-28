@@ -621,10 +621,28 @@ button.swiper-pagination-bullet {
   overflow: hidden;
 }
 
-.gallery-thumbs .swiper-slide:hover {
-  border: 1px solid @blue-bg;
-  
-  .slider__thumb {
-    border-width: 9px;
-  }
+.gallery-top {
+  height: 80%;
+  width: 100%;
 }
+.gallery-thumbs {
+  height: 20%;
+  box-sizing: border-box;
+  padding: 10px 0;
+}
+.gallery-thumbs .swiper-slide {
+  width: 25%;
+  height: 100%;
+}
+
+.gallery-thumbs .swiper-slide-active {
+  border: 1px solid @blue-bg;
+}
+
+//.gallery-thumbs .swiper-slide:hover {
+//  border: 1px solid @blue-bg;
+//  
+//  .slider__thumb {
+//    border-width: 9px;
+//  }
+//}
