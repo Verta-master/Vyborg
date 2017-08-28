@@ -1,3 +1,29 @@
 .sidebar {
   width: 280px;
+  margin-top: 30px;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-bottom: 20px;
+  position: relative;
+  
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50vw;
+    height: 100%;
+    background-color: @grey-bg;
+    z-index: -1;
+  }
+}
+
+.sidebar__title {
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 400;
+  
+  span {
+    border-bottom: 1px solid rgba(0,0,0,0.5);
+  }
 }
