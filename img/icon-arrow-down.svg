@@ -1,0 +1,19 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35.28 35.28">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #41558c;
+      }
+
+      .cls-2 {
+        fill: none;
+        stroke: #fff;
+      }
+    </style>
+  </defs>
+  <title>icon-arrow-down</title>
+  <g>
+    <rect class="cls-1" width="35.28" height="35.28"/>
+    <polyline class="cls-2" points="27.55 13.22 17.64 23.13 7.72 13.22"/>
+  </g>
+</svg>
