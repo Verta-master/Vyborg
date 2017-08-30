@@ -1,0 +1,21 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20.15 19.62">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #41558c;
+        stroke-miterlimit: 10;
+        stroke-width: 2px;
+      }
+
+      .cls-2 {
+        fill: #41558c;
+      }
+    </style>
+  </defs>
+  <title>icon-tel</title>
+  <g>
+    <path class="cls-1" d="M67.38,1872.28h8m-8,3h4m7-5v6l-3,3h-11v-9m11-3.85v2.15a1.39,1.39,0,0,0,1.39,1.39H79a1.39,1.39,0,0,0,1.39-1.39V1868a5.82,5.82,0,0,0-4-5.53,17.32,17.32,0,0,0-10.18,0,5.82,5.82,0,0,0-4,5.53v0.63a1.39,1.39,0,0,0,1.39,1.39h2.27a1.39,1.39,0,0,0,1.39-1.39v-2.15A19.82,19.82,0,0,1,75.34,1866.43Z" transform="translate(-61.23 -1860.66)"/>
+    <polyline class="cls-2" points="13.86 18.62 13.86 15.33 17.15 15.33"/>
+  </g>
+</svg>

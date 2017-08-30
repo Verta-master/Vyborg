@@ -1,0 +1,14 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18.8 18.8">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #41558c;
+        stroke-miterlimit: 10;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <title>icon-phone</title>
+  <path class="cls-1" d="M66.82,1820.16l1.66-1.66a1.51,1.51,0,0,0,0-2.14l-1.75-1.75a1.51,1.51,0,0,0-2.14,0l-0.49.49a6.35,6.35,0,0,0-1.19,7.34,18.91,18.91,0,0,0,7.85,7.86,6.35,6.35,0,0,0,7.34-1.19l0.49-.49a1.51,1.51,0,0,0,0-2.14l-1.75-1.75a1.51,1.51,0,0,0-2.14,0L73,1826.38A21.65,21.65,0,0,1,66.82,1820.16Z" transform="translate(-61.23 -1813.17)"/>
+</svg>
