@@ -54,6 +54,10 @@
   max-height: 240px;
   margin-top: 20px;
   margin-bottom: 45px;
+  
+  &--subscription {
+    margin-bottom: 65px;
+  }
 }
 
 .article__item {
@@ -77,6 +81,43 @@
   td:nth-child(2) {
     width: 140px;
   }
+  
+  th {
+    color: @grey;
+    font-weight: 400;
+    text-align: left;
+  }
+  
+  &--subsription {
+    width: 620px;
+    margin-top: 47px;
+    margin-bottom: 65px;
+    
+    td {
+      height: 42px;
+    }
+    
+    td:first-child {
+      width: 330px;
+    }
+    
+    td:nth-child(n+2) {
+      width: 100px;
+    }
+  }
+  
+  &--variant {
+    margin-top: 55px;
+    margin-bottom: 55px;
+    
+    td {
+      height: 45px;
+    }
+    
+    td:nth-child(2) {
+      width: 100px;
+    }
+  }
 }
 
 .article__price {
@@ -99,6 +140,10 @@
 
 .article__block--narrow {
   width: 560px;
+}
+
+.article__block--760 {
+  width: 760px;
 }
 
 .article__grid {
@@ -131,4 +176,8 @@
     background-repeat: no-repeat;
     background-size: contain;
   }
+}
+
+.article__text--subscription {
+  margin-top: 35px;
 }
