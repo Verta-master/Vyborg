@@ -1,0 +1,67 @@
+.arxiv__form {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.arxiv__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  margin-top: 55px;
+}
+
+.arxiv__item {
+  width: 260px;
+  margin-right: 40px;
+  margin-bottom: 75px;
+  
+  &:nth-child(4n) {
+    margin-right: 0;
+  }
+}
+
+.arxiv__figure {
+  width: 260px;
+  height: 360px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.arxiv__img {
+  width: 260px;
+  height: 390px;
+  margin-left: -15px;
+  margin-top: -15px;
+}
+
+.arxiv__view,
+.arxiv__link {
+  line-height: 27px;
+  color: @blue-bg;
+  text-decoration: none;
+  border-bottom: 1px solid @blue-bg;
+  
+  &:hover,
+  &:active {
+    border-bottom: 1px dashed @blue-bg;
+  }
+}
+
+.arxiv__size {
+  color: @grey;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding-left: 5px;
+}
+
+.arxiv__date {
+  display: block;
+  line-height: 27px;
+}
+
+.arxiv__link {
+  font-size: 18px;
+}

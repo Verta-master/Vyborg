@@ -1,0 +1,50 @@
+.sub-nav {
+  padding: 15px 0;
+  margin-bottom: 30px;
+}
+
+.sub-nav__link {
+  font-size: 18px;
+  line-height: 22px;
+  color: @blue-bg;
+  margin-right: 20px;
+  text-decoration: none;
+  position: relative;
+  
+  span {
+    border-bottom: 1px solid @blue-bg;
+  }
+  
+  b {
+    font-size: 14px;
+    color: @grey;
+    font-weight: 400;
+  }
+  
+  &:hover span,
+  &:active span {
+    border-bottom: 1px dashed @blue-bg;
+  }
+  
+  &::after {
+    content: "|";
+    position: absolute;
+    top: 2px;
+    right: -15px;
+    color: #000;
+  }
+  
+  &:last-child::after {
+    display: none;
+  }
+  
+  &--active {
+    color: #000;
+    border-bottom: none;
+    
+    &:hover,
+    &:active {
+      border: none;
+    }
+  }
+}
