@@ -160,6 +160,10 @@
   width: 760px;
 }
 
+.article__block--700 {
+  width: 700px;
+}
+
 .article__grid {
   width: 100%;
   display: flex;
@@ -194,4 +198,45 @@
 
 .article__text--subscription {
   margin-top: 35px;
+}
+
+.article__title {
+  text-decoration: none;
+  
+  h2 {
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 400;
+    color: #000;
+    margin-bottom: 5px;
+  }
+  
+  &:hover h2 {
+    color: @blue-bg;
+    text-decoration: underline;
+  }
+}
+
+.article__category {
+  color: @blue-bg;
+  
+  &:hover,
+  &:active {
+    opacity: 0.7;
+  }
+}
+
+.article__anounce {
+  border-bottom: 1px solid @grey;
+  padding-bottom: 22px;
+  padding-top: 5px;
+  
+  &:last-child {
+    border-bottom: none;
+  }
+  
+  .article__text {
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
 }
