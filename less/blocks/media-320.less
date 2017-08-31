@@ -1,0 +1,282 @@
+@media @mobile {
+  .menu-close {
+    display: block;
+  }
+  
+  .wrapper {
+    width: @max-mobile;
+  }
+  
+  .header__info {
+    display: flex;
+  }
+  
+  .header {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .header__logo {
+    order: 1;
+  }
+  
+  .menu {
+    order: 2;
+  }
+  
+  .header__top {
+    order: 3;
+    padding-top: 35px;
+    padding-bottom: 40px;
+  }
+  
+  .new-issue,
+  .push {
+    display: none;
+  }
+  
+  .new-issue--mobile {
+    display: flex;
+    width: 100%;
+    margin-bottom: 35px;
+    
+    &::before {
+      left: 70px;
+    }
+    
+    &:after {
+      content: "";
+      position: absolute;
+      bottom: -35px;
+      left: -20px;
+      width: 320px;
+      height: 1px;
+      background-color: @grey;
+    }
+  }
+  
+  .logo {
+    margin-left: 35px;
+    margin-right: auto;
+    padding-top: 10px;
+  }
+  
+  .menu__list {
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+    
+    &:after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: -20px;
+      width: 320px;
+      height: 1px;
+      background-color: @grey;
+    }
+  }
+  
+  .menu__link {
+    display: block;
+    padding: 20px 0;
+  }
+  
+  .menu__user {
+    width: 100%;
+    flex-direction: column;
+  }
+  
+  .menu__arxiv {
+    padding-left: 30px;
+    
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: -20px;
+      width: 320px;
+      height: 1px;
+      background-color: @grey;
+    }
+  }
+  
+  .search__input {
+    width: 100%;
+    margin: 35px 0;
+  }
+  
+  .user {
+    order: 1;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 40px;
+  }
+  
+  .user__link {
+    text-transform: uppercase;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 3px;
+    
+    &:nth-of-type(2) {
+      padding-left: 20px;
+    }
+  }
+  
+  .social {
+    order: 2;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    width: 100%;
+  }
+  
+  .social__link {
+    margin-right: 0;
+    width: 28px;
+    height: 28px;
+    background-size: contain;
+  }
+  
+  .social__item {
+    margin-right: 30px;
+    margin-bottom: 45px;
+    
+    &:nth-child(5n) {
+      margin-right: 0;
+    }
+  }
+  
+  .social--modal {
+    .social__item {
+      margin-right: 15px;
+      margin-bottom: 0;
+    }
+  }
+  
+  .header__info {
+    order: 3;
+    margin: 0 -20px 0 -10px;
+  }
+  
+  .footer {
+    padding-top: 40px;
+    padding-bottom: 20px;
+  }
+  
+  .footer__copyright {
+    width: 100%;
+    margin-bottom: 35px;
+    text-align: center;
+  }
+  
+  .footer__developers {
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .footer__design {
+    text-align: center;
+    width: 100%;
+  }
+  
+  .footer__mobile {
+    display: block;
+    line-height: 22px;
+  }
+  
+  .footer__icon {
+    margin-left: 0;
+  }
+  
+  .menu--closed {
+    .header__top,
+    .menu {
+      display: none;
+    }
+  }
+
+  .menu--opened {
+    .header__top,
+    .menu {
+      display: block;
+    }
+
+    .menu-close {
+      background-image: url(../img/menu-ham.svg);
+    }
+  }
+  
+  .address,
+  .slider,
+  .news {
+    width: @max-mobile;
+  }
+  
+  .news__item--main {
+    .news__picture {
+      height: 130px;
+    }
+  }
+  
+  .slider__img {
+    width: @max-mobile;
+  }
+  
+  .slider__text {
+    font-size: 0;
+  }
+  
+  .slider__title {
+    font-size: 14px;
+    line-height: 17px;
+    margin: 0;
+  }
+  
+  .slider__label {
+    .visually-hidden;
+  }
+  
+  .slider__info {
+    padding-left: 50px;
+  }
+  
+  .address__block {
+    padding-left: 20px;
+  }
+  
+  .box-modal {
+    width: 260px;
+    padding: 20px;
+    padding-top: 40px;
+  }
+  
+  .box-modal__label {
+    font-size: 18px;
+    line-height: 24px;
+    margin-right: 20px;
+  }
+  
+  .box-modal__label:first-of-type::after {
+    right: -15px;
+  }
+  
+  .box-modal__btn,
+  .box-modal__input {
+    margin-bottom: 20px;
+  }
+  
+  .box-modal__toggle {
+    bottom: 20px;
+  }
+  
+  .box-modal__btn {
+    width: 100%;
+    padding: 0;
+  }
+  
+  .box-modal_close {
+    right: 50%;
+    transform: translateX(50%);
+  }
+}
