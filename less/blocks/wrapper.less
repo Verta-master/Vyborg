@@ -14,6 +14,14 @@
   &--section {
     display: block;
   }
+  
+  &--404 {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 100vh;
+    padding: 60px 0;
+  }
 }
 
 .wrapper__column {
@@ -26,4 +34,74 @@
   width: 860px;
   margin-left: auto;
   margin-right: 20px;
+}
+
+.wrapper__block {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  min-height: 310px;
+}
+
+.wrapper__letter {
+  font-size: 155px;
+  line-height: 155px;
+  color: @grey-bg;
+  margin: 0;
+}
+
+.wrapper__item {
+  width: 250px;
+  margin-right: 40px;
+  
+  &--self {
+    align-self: flex-end;
+  }
+}
+
+.wrapper__link {
+  padding-left: 30px;
+  color: #000;
+  text-decoration: none;
+  position: relative;
+  
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 14px;
+    background-image: url(../img/icon-mail.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  
+  &:hover {
+    color: @blue-bg;
+  }
+}
+
+.wrapper__link-404 {
+  font-size: 16px;
+  line-height: 40px;
+  color: @blue-bg;
+  letter-spacing: 3px;
+  text-decoration: none;
+  text-transform: uppercase;
+  
+  span {
+    border-bottom: 1px solid @blue-bg;
+  
+    &:hover,
+    &:active {
+      border-bottom: 1px dashed @blue-bg;
+    }
+  }
+}
+
+.wrapper__copyright {
+  margin-bottom: 0;
+  margin-top: 45px;
 }
