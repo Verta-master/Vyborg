@@ -1,0 +1,14 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13.41 13.41">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: red;
+        stroke-miterlimit: 10;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <title>icon-cross</title>
+  <path class="cls-1" d="M619.29,288.06l-12,12m0-12,12,12" transform="translate(-606.59 -287.35)"/>
+</svg>
