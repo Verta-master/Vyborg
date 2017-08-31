@@ -65,3 +65,42 @@
 .arxiv__link {
   font-size: 18px;
 }
+
+.arxiv__journal {
+  width: 560px;
+  height: 460px;
+  overflow: hidden;
+  margin-bottom: 35px;
+}
+
+.arxiv__site {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  align-content: flex-start;
+}
+
+.arxiv__version {
+  margin-right: 40px;
+  
+  &:nth-child(2n) {
+    margin-right: 0;
+  }
+}
+
+.arxiv__version-link {
+  font-size: 18px;
+  line-height: 26px;
+  color: @blue-bg;
+  
+  &:hover,
+  &:active {
+    opacity: 0.7;
+  }
+}
+
+.arxiv__period {
+  color: @grey;
+  margin-bottom: 10px;
+}

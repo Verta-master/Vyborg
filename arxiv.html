@@ -118,184 +118,276 @@
       <div class="wrapper wrapper--section">
         <h1 class="title-h1">Архив</h1>
         
+        <input type="radio" name="tab" id="print" class="sub-nav__radio sub-nav__radio--print" checked>
+        <input type="radio" name="tab" id="arxiv" class="sub-nav__radio sub-nav__radio--arxiv">
+        <input type="radio" name="tab" id="acts" class="sub-nav__radio sub-nav__radio--acts">
+        
         <nav class="sub-nav">
-          <span class="sub-nav__link sub-nav__link--active">Печатные выпуски</span>
-          <a href="#" class="sub-nav__link"><span>Архив сайтов</span><b> (2 версии)</b></a>
-          <a href="#" class="sub-nav__link"><span>Правовые акты муниципальных образований</span></a>
+          <label for="print" class="sub-nav__link sub-nav__link--print"><span>Печатные выпуски</span></label>
+          <label for="arxiv" class="sub-nav__link sub-nav__link--arxiv"><span>Архив сайтов</span><b> (2 версии)</b></label>
+          <label for="acts" class="sub-nav__link sub-nav__link--acts"><span>Правовые акты муниципальных образований</span></label>
         </nav>
         
-        <form action="#" method="get" class="arxiv__form">
-          <select id="kind" name="kind" class="acts__select acts__select--arxiv">
-            <option value="january">Январь</option>
-            <option value="february">Февраль</option>
-            <option value="march">Март</option>
-            <option value="april">Апрель</option>
-            <option value="may">Май</option>
-            <option value="june">Июнь</option>
-            <option value="july">Июль</option>
-            <option value="august">Август</option>
-            <option value="september">Сентябрь</option>
-            <option value="october">Октябрь</option>
-            <option value="november">Ноябрь</option>
-            <option value="december">Декабрь</option>
-          </select>
-          <select id="docs" name="docs" class="acts__select acts__select--arxiv">
-            <option value="2017">2017</option>
-            <option value="2016">2016</option>
-            <option value="2015">2015</option>
-          </select>
-          <button class="btn-blue">Найти</button>
-        </form>
-        
-        <ul class="arxiv__list">
-          <li class="arxiv__item">
-            <figure class="arxiv__figure">
-              <img src="img/arxiv-1.jpg" alt="Выпуск № 70 (17769)" class="arxiv__img" width="360" height="260">
-            </figure>
-            <a href="#" class="arxiv__link" download>№ 70 (17769)</a>
-            <span class="arxiv__size"> PDF, 5 МБ</span>
-            <time datetime="2017-07-30T12:37:00+03:00" class="arxiv__date">от 30 июня 2017, пятница</time>
-            <a href="#" class="arxiv__view">Новости онлайн</a>
-          </li>
-          <li class="arxiv__item">
-            <figure class="arxiv__figure">
-              <img src="img/arxiv-2.jpg" alt="Выпуск № 70 (17769)" class="arxiv__img" width="360" height="260">
-            </figure>
-            <a href="#" class="arxiv__link" download>№ 70 (17769)</a>
-            <span class="arxiv__size"> PDF, 5 МБ</span>
-            <time datetime="2017-07-30T12:37:00+03:00" class="arxiv__date">от 30 июня 2017, пятница</time>
-            <a href="#" class="arxiv__view">Новости онлайн</a>
-          </li>
-          <li class="arxiv__item">
-            <figure class="arxiv__figure">
-              <img src="img/arxiv-3.jpg" alt="Выпуск № 70 (17769)" class="arxiv__img" width="360" height="260">
-            </figure>
-            <a href="#" class="arxiv__link" download>№ 70 (17769)</a>
-            <span class="arxiv__size"> PDF, 5 МБ</span>
-            <time datetime="2017-07-30T12:37:00+03:00" class="arxiv__date">от 30 июня 2017, пятница</time>
-            <a href="#" class="arxiv__view">Новости онлайн</a>
-          </li>
-          <li class="arxiv__item">
-            <figure class="arxiv__figure">
-              <img src="img/arxiv-4.jpg" alt="Выпуск № 70 (17769)" class="arxiv__img" width="360" height="260">
-            </figure>
-            <a href="#" class="arxiv__link" download>№ 70 (17769)</a>
-            <span class="arxiv__size"> PDF, 5 МБ</span>
-            <time datetime="2017-07-30T12:37:00+03:00" class="arxiv__date">от 30 июня 2017, пятница</time>
-            <a href="#" class="arxiv__view">Новости онлайн</a>
-          </li>
-          <li class="arxiv__item">
-            <figure class="arxiv__figure">
-              <img src="img/arxiv-5.jpg" alt="Выпуск № 70 (17769)" class="arxiv__img" width="360" height="260">
-            </figure>
-            <a href="#" class="arxiv__link" download>№ 70 (17769)</a>
-            <span class="arxiv__size"> PDF, 5 МБ</span>
-            <time datetime="2017-07-30T12:37:00+03:00" class="arxiv__date">от 30 июня 2017, пятница</time>
-            <a href="#" class="arxiv__view">Новости онлайн</a>
-          </li>
-          <li class="arxiv__item">
-            <figure class="arxiv__figure">
-              <img src="img/arxiv-6.jpg" alt="Выпуск № 70 (17769)" class="arxiv__img" width="360" height="260">
-            </figure>
-            <a href="#" class="arxiv__link" download>№ 70 (17769)</a>
-            <span class="arxiv__size"> PDF, 5 МБ</span>
-            <time datetime="2017-07-30T12:37:00+03:00" class="arxiv__date">от 30 июня 2017, пятница</time>
-            <a href="#" class="arxiv__view">Новости онлайн</a>
-          </li>
-          <li class="arxiv__item">
-            <figure class="arxiv__figure">
-              <img src="img/arxiv-7.jpg" alt="Выпуск № 70 (17769)" class="arxiv__img" width="360" height="260">
-            </figure>
-            <a href="#" class="arxiv__link" download>№ 70 (17769)</a>
-            <span class="arxiv__size"> PDF, 5 МБ</span>
-            <time datetime="2017-07-30T12:37:00+03:00" class="arxiv__date">от 30 июня 2017, пятница</time>
-            <a href="#" class="arxiv__view">Новости онлайн</a>
-          </li>
-          <li class="arxiv__item">
-            <figure class="arxiv__figure">
-              <img src="img/arxiv-8.jpg" alt="Выпуск № 70 (17769)" class="arxiv__img" width="360" height="260">
-            </figure>
-            <a href="#" class="arxiv__link" download>№ 70 (17769)</a>
-            <span class="arxiv__size"> PDF, 5 МБ</span>
-            <time datetime="2017-07-30T12:37:00+03:00" class="arxiv__date">от 30 июня 2017, пятница</time>
-            <a href="#" class="arxiv__view">Новости онлайн</a>
-          </li>
-          <li class="arxiv__item">
-            <figure class="arxiv__figure">
-              <img src="img/arxiv-9.jpg" alt="Выпуск № 70 (17769)" class="arxiv__img" width="360" height="260">
-            </figure>
-            <a href="#" class="arxiv__link" download>№ 70 (17769)</a>
-            <span class="arxiv__size"> PDF, 5 МБ</span>
-            <time datetime="2017-07-30T12:37:00+03:00" class="arxiv__date">от 30 июня 2017, пятница</time>
-            <a href="#" class="arxiv__view">Новости онлайн</a>
-          </li>
-          <li class="arxiv__item">
-            <figure class="arxiv__figure">
-              <img src="img/arxiv-10.jpg" alt="Выпуск № 70 (17769)" class="arxiv__img" width="360" height="260">
-            </figure>
-            <a href="#" class="arxiv__link" download>№ 70 (17769)</a>
-            <span class="arxiv__size"> PDF, 5 МБ</span>
-            <time datetime="2017-07-30T12:37:00+03:00" class="arxiv__date">от 30 июня 2017, пятница</time>
-            <a href="#" class="arxiv__view">Новости онлайн</a>
-          </li>
-          <li class="arxiv__item">
-            <figure class="arxiv__figure">
-              <img src="img/arxiv-11.jpg" alt="Выпуск № 70 (17769)" class="arxiv__img" width="360" height="260">
-            </figure>
-            <a href="#" class="arxiv__link" download>№ 70 (17769)</a>
-            <span class="arxiv__size"> PDF, 5 МБ</span>
-            <time datetime="2017-07-30T12:37:00+03:00" class="arxiv__date">от 30 июня 2017, пятница</time>
-            <a href="#" class="arxiv__view">Новости онлайн</a>
-          </li>
-          <li class="arxiv__item">
-            <figure class="arxiv__figure">
-              <img src="img/arxiv-12.jpg" alt="Выпуск № 70 (17769)" class="arxiv__img" width="360" height="260">
-            </figure>
-            <a href="#" class="arxiv__link" download>№ 70 (17769)</a>
-            <span class="arxiv__size"> PDF, 5 МБ</span>
-            <time datetime="2017-07-30T12:37:00+03:00" class="arxiv__date">от 30 июня 2017, пятница</time>
-            <a href="#" class="arxiv__view">Новости онлайн</a>
-          </li>
-          <li class="arxiv__item">
-            <figure class="arxiv__figure">
-              <img src="img/arxiv-13.jpg" alt="Выпуск № 70 (17769)" class="arxiv__img" width="360" height="260">
-            </figure>
-            <a href="#" class="arxiv__link" download>№ 70 (17769)</a>
-            <span class="arxiv__size"> PDF, 5 МБ</span>
-            <time datetime="2017-07-30T12:37:00+03:00" class="arxiv__date">от 30 июня 2017, пятница</time>
-            <a href="#" class="arxiv__view">Новости онлайн</a>
-          </li>
-          <li class="arxiv__item">
-            <figure class="arxiv__figure">
-              <img src="img/arxiv-14.jpg" alt="Выпуск № 70 (17769)" class="arxiv__img" width="360" height="260">
-            </figure>
-            <a href="#" class="arxiv__link" download>№ 70 (17769)</a>
-            <span class="arxiv__size"> PDF, 5 МБ</span>
-            <time datetime="2017-07-30T12:37:00+03:00" class="arxiv__date">от 30 июня 2017, пятница</time>
-            <a href="#" class="arxiv__view">Новости онлайн</a>
-          </li>
-          <li class="arxiv__item">
-            <figure class="arxiv__figure">
-              <img src="img/arxiv-15.jpg" alt="Выпуск № 70 (17769)" class="arxiv__img" width="360" height="260">
-            </figure>
-            <a href="#" class="arxiv__link" download>№ 70 (17769)</a>
-            <span class="arxiv__size"> PDF, 5 МБ</span>
-            <time datetime="2017-07-30T12:37:00+03:00" class="arxiv__date">от 30 июня 2017, пятница</time>
-            <a href="#" class="arxiv__view">Новости онлайн</a>
-          </li>
-          <li class="arxiv__item">
-            <figure class="arxiv__figure">
-              <img src="img/arxiv-16.jpg" alt="Выпуск № 70 (17769)" class="arxiv__img" width="360" height="260">
-            </figure>
-            <a href="#" class="arxiv__link" download>№ 70 (17769)</a>
-            <span class="arxiv__size"> PDF, 5 МБ</span>
-            <time datetime="2017-07-30T12:37:00+03:00" class="arxiv__date">от 30 июня 2017, пятница</time>
-            <a href="#" class="arxiv__view">Новости онлайн</a>
-          </li>
-        </ul>
+<!--  Tab 1      -->
+        <div class="tab tab--print">
+          <form action="#" method="get" class="arxiv__form">
+            <select id="kind" name="kind" class="acts__select acts__select--arxiv">
+              <option value="january">Январь</option>
+              <option value="february">Февраль</option>
+              <option value="march">Март</option>
+              <option value="april">Апрель</option>
+              <option value="may">Май</option>
+              <option value="june">Июнь</option>
+              <option value="july">Июль</option>
+              <option value="august">Август</option>
+              <option value="september">Сентябрь</option>
+              <option value="october">Октябрь</option>
+              <option value="november">Ноябрь</option>
+              <option value="december">Декабрь</option>
+            </select>
+            <select id="docs" name="docs" class="acts__select acts__select--arxiv">
+              <option value="2017">2017</option>
+              <option value="2016">2016</option>
+              <option value="2015">2015</option>
+            </select>
+            <button class="btn-blue">Найти</button>
+          </form>
 
-        <div class="btn-more btn-more--arxiv">
-          <button type="button" class="more">Показать еще</button>
+          <ul class="arxiv__list">
+            <li class="arxiv__item">
+              <figure class="arxiv__figure">
+                <img src="img/arxiv-1.jpg" alt="Выпуск № 70 (17769)" class="arxiv__img" width="360" height="260">
+              </figure>
+              <a href="#" class="arxiv__link" download>№ 70 (17769)</a>
+              <span class="arxiv__size"> PDF, 5 МБ</span>
+              <time datetime="2017-07-30T12:37:00+03:00" class="arxiv__date">от 30 июня 2017, пятница</time>
+              <a href="#" class="arxiv__view">Новости онлайн</a>
+            </li>
+            <li class="arxiv__item">
+              <figure class="arxiv__figure">
+                <img src="img/arxiv-2.jpg" alt="Выпуск № 70 (17769)" class="arxiv__img" width="360" height="260">
+              </figure>
+              <a href="#" class="arxiv__link" download>№ 70 (17769)</a>
+              <span class="arxiv__size"> PDF, 5 МБ</span>
+              <time datetime="2017-07-30T12:37:00+03:00" class="arxiv__date">от 30 июня 2017, пятница</time>
+              <a href="#" class="arxiv__view">Новости онлайн</a>
+            </li>
+            <li class="arxiv__item">
+              <figure class="arxiv__figure">
+                <img src="img/arxiv-3.jpg" alt="Выпуск № 70 (17769)" class="arxiv__img" width="360" height="260">
+              </figure>
+              <a href="#" class="arxiv__link" download>№ 70 (17769)</a>
+              <span class="arxiv__size"> PDF, 5 МБ</span>
+              <time datetime="2017-07-30T12:37:00+03:00" class="arxiv__date">от 30 июня 2017, пятница</time>
+              <a href="#" class="arxiv__view">Новости онлайн</a>
+            </li>
+            <li class="arxiv__item">
+              <figure class="arxiv__figure">
+                <img src="img/arxiv-4.jpg" alt="Выпуск № 70 (17769)" class="arxiv__img" width="360" height="260">
+              </figure>
+              <a href="#" class="arxiv__link" download>№ 70 (17769)</a>
+              <span class="arxiv__size"> PDF, 5 МБ</span>
+              <time datetime="2017-07-30T12:37:00+03:00" class="arxiv__date">от 30 июня 2017, пятница</time>
+              <a href="#" class="arxiv__view">Новости онлайн</a>
+            </li>
+            <li class="arxiv__item">
+              <figure class="arxiv__figure">
+                <img src="img/arxiv-5.jpg" alt="Выпуск № 70 (17769)" class="arxiv__img" width="360" height="260">
+              </figure>
+              <a href="#" class="arxiv__link" download>№ 70 (17769)</a>
+              <span class="arxiv__size"> PDF, 5 МБ</span>
+              <time datetime="2017-07-30T12:37:00+03:00" class="arxiv__date">от 30 июня 2017, пятница</time>
+              <a href="#" class="arxiv__view">Новости онлайн</a>
+            </li>
+            <li class="arxiv__item">
+              <figure class="arxiv__figure">
+                <img src="img/arxiv-6.jpg" alt="Выпуск № 70 (17769)" class="arxiv__img" width="360" height="260">
+              </figure>
+              <a href="#" class="arxiv__link" download>№ 70 (17769)</a>
+              <span class="arxiv__size"> PDF, 5 МБ</span>
+              <time datetime="2017-07-30T12:37:00+03:00" class="arxiv__date">от 30 июня 2017, пятница</time>
+              <a href="#" class="arxiv__view">Новости онлайн</a>
+            </li>
+            <li class="arxiv__item">
+              <figure class="arxiv__figure">
+                <img src="img/arxiv-7.jpg" alt="Выпуск № 70 (17769)" class="arxiv__img" width="360" height="260">
+              </figure>
+              <a href="#" class="arxiv__link" download>№ 70 (17769)</a>
+              <span class="arxiv__size"> PDF, 5 МБ</span>
+              <time datetime="2017-07-30T12:37:00+03:00" class="arxiv__date">от 30 июня 2017, пятница</time>
+              <a href="#" class="arxiv__view">Новости онлайн</a>
+            </li>
+            <li class="arxiv__item">
+              <figure class="arxiv__figure">
+                <img src="img/arxiv-8.jpg" alt="Выпуск № 70 (17769)" class="arxiv__img" width="360" height="260">
+              </figure>
+              <a href="#" class="arxiv__link" download>№ 70 (17769)</a>
+              <span class="arxiv__size"> PDF, 5 МБ</span>
+              <time datetime="2017-07-30T12:37:00+03:00" class="arxiv__date">от 30 июня 2017, пятница</time>
+              <a href="#" class="arxiv__view">Новости онлайн</a>
+            </li>
+            <li class="arxiv__item">
+              <figure class="arxiv__figure">
+                <img src="img/arxiv-9.jpg" alt="Выпуск № 70 (17769)" class="arxiv__img" width="360" height="260">
+              </figure>
+              <a href="#" class="arxiv__link" download>№ 70 (17769)</a>
+              <span class="arxiv__size"> PDF, 5 МБ</span>
+              <time datetime="2017-07-30T12:37:00+03:00" class="arxiv__date">от 30 июня 2017, пятница</time>
+              <a href="#" class="arxiv__view">Новости онлайн</a>
+            </li>
+            <li class="arxiv__item">
+              <figure class="arxiv__figure">
+                <img src="img/arxiv-10.jpg" alt="Выпуск № 70 (17769)" class="arxiv__img" width="360" height="260">
+              </figure>
+              <a href="#" class="arxiv__link" download>№ 70 (17769)</a>
+              <span class="arxiv__size"> PDF, 5 МБ</span>
+              <time datetime="2017-07-30T12:37:00+03:00" class="arxiv__date">от 30 июня 2017, пятница</time>
+              <a href="#" class="arxiv__view">Новости онлайн</a>
+            </li>
+            <li class="arxiv__item">
+              <figure class="arxiv__figure">
+                <img src="img/arxiv-11.jpg" alt="Выпуск № 70 (17769)" class="arxiv__img" width="360" height="260">
+              </figure>
+              <a href="#" class="arxiv__link" download>№ 70 (17769)</a>
+              <span class="arxiv__size"> PDF, 5 МБ</span>
+              <time datetime="2017-07-30T12:37:00+03:00" class="arxiv__date">от 30 июня 2017, пятница</time>
+              <a href="#" class="arxiv__view">Новости онлайн</a>
+            </li>
+            <li class="arxiv__item">
+              <figure class="arxiv__figure">
+                <img src="img/arxiv-12.jpg" alt="Выпуск № 70 (17769)" class="arxiv__img" width="360" height="260">
+              </figure>
+              <a href="#" class="arxiv__link" download>№ 70 (17769)</a>
+              <span class="arxiv__size"> PDF, 5 МБ</span>
+              <time datetime="2017-07-30T12:37:00+03:00" class="arxiv__date">от 30 июня 2017, пятница</time>
+              <a href="#" class="arxiv__view">Новости онлайн</a>
+            </li>
+            <li class="arxiv__item">
+              <figure class="arxiv__figure">
+                <img src="img/arxiv-13.jpg" alt="Выпуск № 70 (17769)" class="arxiv__img" width="360" height="260">
+              </figure>
+              <a href="#" class="arxiv__link" download>№ 70 (17769)</a>
+              <span class="arxiv__size"> PDF, 5 МБ</span>
+              <time datetime="2017-07-30T12:37:00+03:00" class="arxiv__date">от 30 июня 2017, пятница</time>
+              <a href="#" class="arxiv__view">Новости онлайн</a>
+            </li>
+            <li class="arxiv__item">
+              <figure class="arxiv__figure">
+                <img src="img/arxiv-14.jpg" alt="Выпуск № 70 (17769)" class="arxiv__img" width="360" height="260">
+              </figure>
+              <a href="#" class="arxiv__link" download>№ 70 (17769)</a>
+              <span class="arxiv__size"> PDF, 5 МБ</span>
+              <time datetime="2017-07-30T12:37:00+03:00" class="arxiv__date">от 30 июня 2017, пятница</time>
+              <a href="#" class="arxiv__view">Новости онлайн</a>
+            </li>
+            <li class="arxiv__item">
+              <figure class="arxiv__figure">
+                <img src="img/arxiv-15.jpg" alt="Выпуск № 70 (17769)" class="arxiv__img" width="360" height="260">
+              </figure>
+              <a href="#" class="arxiv__link" download>№ 70 (17769)</a>
+              <span class="arxiv__size"> PDF, 5 МБ</span>
+              <time datetime="2017-07-30T12:37:00+03:00" class="arxiv__date">от 30 июня 2017, пятница</time>
+              <a href="#" class="arxiv__view">Новости онлайн</a>
+            </li>
+            <li class="arxiv__item">
+              <figure class="arxiv__figure">
+                <img src="img/arxiv-16.jpg" alt="Выпуск № 70 (17769)" class="arxiv__img" width="360" height="260">
+              </figure>
+              <a href="#" class="arxiv__link" download>№ 70 (17769)</a>
+              <span class="arxiv__size"> PDF, 5 МБ</span>
+              <time datetime="2017-07-30T12:37:00+03:00" class="arxiv__date">от 30 июня 2017, пятница</time>
+              <a href="#" class="arxiv__view">Новости онлайн</a>
+            </li>
+          </ul>
+
+          <div class="btn-more btn-more--arxiv">
+            <button type="button" class="more">Показать еще</button>
+          </div>
+        </div>
+        
+<!--  Tab-2      -->
+        <div class="tab tab--arxiv">
+          <ul class="arxiv__site">
+            <li class="arxiv__version">
+              <figure class="arxiv__journal">
+                <img src="img/version-1.png" alt="Архив сайтов" width="560" height="460">
+              </figure>
+              <a href="#" class="arxiv__version-link">2я версия</a>
+              <p class="arxiv__period">2013-2016</p>
+            </li>
+            <li class="arxiv__version">
+              <figure class="arxiv__journal">
+                <img src="img/version-2.png" alt="Архив сайтов" width="560" height="460">
+              </figure>
+              <a href="#" class="arxiv__version-link">1я версия</a>
+              <p class="arxiv__period">2012-2013</p>
+            </li>
+          </ul>
+        </div>
+        
+<!--  Tab-3      -->
+        <div class="tab tab--acts">
+          <form action="#" method="get" class="acts__form">
+            <div class="acts__field">
+              <label for="kind" class="acts__label">Муниципальных образований:</label>
+              <select id="kind" name="kind" class="acts__select">
+                <option value="item-1">Каменногорское городское поселение</option>
+                <option value="item-2">Каменногорское городское поселение</option>
+                <option value="item-3">Каменногорское городское поселение</option>
+              </select>
+            </div>
+            <div class="acts__field">
+              <label for="docs" class="acts__label">Документы</label>
+              <select id="docs" name="docs" class="acts__select">
+                <option value="item-1">Постановления главы администрации МО </option>
+                <option value="item-2">Постановления главы администрации МО </option>
+                <option value="item-3">Постановления главы администрации МО </option>
+              </select>
+            </div>
+            <div class="acts__field acts__field--search">
+              <input type="text" name="acts-search" id="acts-search" class="acts__search" placeholder="Поиск по актам">
+              <button type="submit" class="search__btn search__btn--acts">
+                <span class="visually-hidden">Искать</span>
+                <svg class="search__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20.78 20.78">
+                  <path class="search__fill" d="M1194.63,167.26l-7.66,7.66M1206,162.53a6.69,6.69,0,1,1-6.69-6.69A6.69,6.69,0,0,1,1206,162.53Z" transform="translate(-1186.27 -154.84)"/>
+                </svg>
+              </button>
+            </div>
+          </form>
+
+          <ul class="acts__list">
+            <li class="acts__item">
+              <a href="#" class="acts__link">№ 2153   от   29 Июн 2017г.  Об утверждении краткосрочного муниципального плана реализации Региональной программы капитального ремонта общего имущества в многоквартирных домах, расположенных на территории муниципального образования «Город Выборг» Выборгского района Ленинградской области, с учетом мер государственной поддержки в 2017 году и реестра многоквартирных домов, которые подлежат капитальному ремонту на территории муниципального образования «Город Выборг» Выборгского района Ленинградской области в 2017 году</a>
+              <span class="download__size">PDF, 5 МБ</span>
+            </li>
+            <li class="acts__item">
+              <a href="#" class="acts__link">№ 2153   от   29 Июн 2017г.  Об утверждении краткосрочного муниципального плана реализации Региональной программы капитального ремонта общего имущества в многоквартирных домах, расположенных на территории муниципального образования «Город Выборг» Выборгского района Ленинградской области, с учетом мер государственной поддержки в 2017 году и реестра многоквартирных домов, которые подлежат капитальному ремонту на территории муниципального образования «Город Выборг» Выборгского района Ленинградской области в 2017 году</a>
+              <span class="download__size">PDF, 5 МБ</span>
+            </li>
+            <li class="acts__item">
+              <a href="#" class="acts__link">№ 2153   от   29 Июн 2017г.  Об утверждении краткосрочного муниципального плана реализации Региональной программы капитального ремонта общего имущества в многоквартирных домах, расположенных на территории муниципального образования «Город Выборг» Выборгского района Ленинградской области, с учетом мер государственной поддержки в 2017 году и реестра многоквартирных домов, которые подлежат капитальному ремонту на территории муниципального образования «Город Выборг» Выборгского района Ленинградской области в 2017 году</a>
+              <span class="download__size">PDF, 5 МБ</span>
+            </li>
+            <li class="acts__item">
+              <a href="#" class="acts__link">№ 2153   от   29 Июн 2017г.  Об утверждении краткосрочного муниципального плана реализации Региональной программы капитального ремонта общего имущества в многоквартирных домах, расположенных на территории муниципального образования «Город Выборг» Выборгского района Ленинградской области, с учетом мер государственной поддержки в 2017 году и реестра многоквартирных домов, которые подлежат капитальному ремонту на территории муниципального образования «Город Выборг» Выборгского района Ленинградской области в 2017 году</a>
+              <span class="download__size">PDF, 5 МБ</span>
+            </li>
+            <li class="acts__item">
+              <a href="#" class="acts__link">№ 2153   от   29 Июн 2017г.  Об утверждении краткосрочного муниципального плана реализации Региональной программы капитального ремонта общего имущества в многоквартирных домах, расположенных на территории муниципального образования «Город Выборг» Выборгского района Ленинградской области, с учетом мер государственной поддержки в 2017 году и реестра многоквартирных домов, которые подлежат капитальному ремонту на территории муниципального образования «Город Выборг» Выборгского района Ленинградской области в 2017 году</a>
+              <span class="download__size">PDF, 5 МБ</span>
+            </li>
+            <li class="acts__item">
+              <a href="#" class="acts__link">№ 2153   от   29 Июн 2017г.  Об утверждении краткосрочного муниципального плана реализации Региональной программы капитального ремонта общего имущества в многоквартирных домах, расположенных на территории муниципального образования «Город Выборг» Выборгского района Ленинградской области, с учетом мер государственной поддержки в 2017 году и реестра многоквартирных домов, которые подлежат капитальному ремонту на территории муниципального образования «Город Выборг» Выборгского района Ленинградской области в 2017 году</a>
+              <span class="download__size">PDF, 5 МБ</span>
+            </li>
+            <li class="acts__item">
+              <a href="#" class="acts__link">№ 2153   от   29 Июн 2017г.  Об утверждении краткосрочного муниципального плана реализации Региональной программы капитального ремонта общего имущества в многоквартирных домах, расположенных на территории муниципального образования «Город Выборг» Выборгского района Ленинградской области, с учетом мер государственной поддержки в 2017 году и реестра многоквартирных домов, которые подлежат капитальному ремонту на территории муниципального образования «Город Выборг» Выборгского района Ленинградской области в 2017 году</a>
+              <span class="download__size">PDF, 5 МБ</span>
+            </li>
+          </ul>
+          <div class="btn-more btn-more--section">
+            <button type="button" class="more">Показать еще</button>
+          </div>
         </div>
       </div>
     </section>
