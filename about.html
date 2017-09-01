@@ -55,9 +55,9 @@
     </div>
     <div class="wrapper header__logo">
       <button class="menu-close"><span class="visually-hidden">Закрыть/Открыть меню</span></button>
-      <div class="logo">
+      <a href="index.html" class="logo">
         <img src="img/logo.png" alt="Газета Выборг" class="logo__img" width="340" height="150">
-      </div>
+      </a>
       <div class="banner">
         <a href="#" class="banner__link banner__link--header">
           <img src="img/banner-header.png" alt="Реклама" class="banner__img" width="460" height="85">
@@ -404,6 +404,7 @@
   <script src="js/jquery-3.2.1.min.js"></script>
   <script src="js/jquery.arcticmodal-0.3.min.js"></script>
   <script src="js/swiper.min.js"></script>
+  <script src="js/script.js"></script>
   
 <!-- Slider -->
   <script>
@@ -414,8 +415,8 @@
       paginationType: 'fraction'
     });
     var galleryThumbs = new Swiper('.gallery-thumbs', {
-      spaceBetween: 10,
-      slidesPerView: 6,
+      spaceBetween: 15,
+      slidesPerView: 'auto',
       touchRatio: 0.2,
       slideToClickedSlide: true,
       centeredSlides: true
