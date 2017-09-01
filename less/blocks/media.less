@@ -15,7 +15,7 @@
       display: none;
     }
   }
-  
+
   .header .banner {
     display: none;
   }
@@ -34,11 +34,11 @@
   }
   
   .footer .social {
-    .visually-hidden;
+    display: none;
   }
   
   .footer .user {
-    .visually-hidden;
+    display: none;
   }
 
   .address,
@@ -101,6 +101,7 @@
     height: 380px;
   }
   
+  .gallery-thumbs .swiper-wrapper,
   .slider--section .gallery-thumbs .swiper-wrapper {
     margin-left: calc(-50% + 15%);
   }
@@ -115,5 +116,150 @@
   
   .slider--section .swiper-pagination-fraction {
     left: 580px;
+  }
+  
+  .wrapper__item {
+    width: 200px;
+    margin-right: 20px;
+  }
+  
+  .wrapper--404 {
+    height: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  
+  .acts__form {
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+  }
+  
+  .acts__field {
+    margin-bottom: 30px;
+  }
+  
+  .btn-more::before,
+  .btn-more::after {
+    width: 230px;
+  }
+  
+  .wrapper__column,
+  .wrapper__column-wide {
+    width: @max-tablet;
+    margin-right: 0;
+  }
+  
+  .article__list {
+    width: 100%;
+  }
+  
+  .sidebar {
+    width: @max-tablet;
+    padding: 0;
+    
+    &::after {
+      display: none;
+    }
+  }
+  
+  .article__block--700,
+  .news__list--column {
+    width: 100%;
+  }
+  
+  .sidebar__wrap {
+    position: relative;
+  }
+  
+  .banner--sidebar {
+    position: absolute;
+    right: 30px;
+    bottom: 0;
+  }
+  
+  .wrapper__block--afisha {
+    flex-wrap: wrap;
+  }
+  
+  .news__list--afisha .news__item {
+    &:last-child,
+    &:nth-last-child(2),
+    &:nth-last-child(3) {
+      border-bottom: 1px solid @grey;
+    }
+  }
+
+  .banner--high {
+    display: none;
+  }
+  
+  .citation {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  
+  .news__list--book {
+    .news__item:nth-child(2n) {
+      margin-right: 0;
+    }
+  }
+  
+  .project__item {
+    &--2017 {
+      width: 200px;
+    }
+
+    &--2016 {
+      width: 140px;
+    }
+
+    &--2015 {
+      width: 320px;
+    }
+  }
+  
+  .project__figure {
+    width: 200px;
+    height: 130px;
+
+    &--2016 {
+      width: 140px;
+      height: 110px;
+    }
+
+    &--2015 {
+      width: 320px;
+      height: 250px;
+    }
+  }
+  
+  .map--bar,
+  .map--timetable,
+  .map--places {
+    iframe {
+      height: 400px;
+    }
+  }
+  
+  .about__list {
+    height: 610px;
+  }
+  
+  .banner__name {
+    margin-bottom: 0;
+  }
+  
+  .banner__phone {
+    font-size: 18px;
+  }
+  
+  .banner__info {
+    width: 100%;
+    padding: 0 5px;
+  }
+  
+  .banner__info--part {
+    width: 350px;
+    left: 70%;
   }
 }

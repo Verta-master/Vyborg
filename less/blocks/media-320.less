@@ -139,7 +139,7 @@
   }
   
   .social__item {
-    margin-right: 30px;
+    margin-right: 25px;
     margin-bottom: 45px;
     
     &:nth-child(5n) {
@@ -171,6 +171,7 @@
   }
   
   .footer__developers {
+    width: 100%;
     flex-direction: column;
     justify-content: center;
   }
@@ -234,7 +235,7 @@
   }
   
   .slider__label {
-    .visually-hidden;
+    display: none;
   }
   
   .slider__info {
@@ -280,16 +281,26 @@
     transform: translateX(50%);
   }
   
+  .slider__figure,
   .slider__figure--full {
     height: 180px;
+  }
+  
+  .gallery-thumbs .swiper-wrapper {
+    margin-left: calc(-50% + 25%);
   }
   
   .slider--section .gallery-thumbs .swiper-wrapper {
     margin-left: calc(-50% + 35%);
   }
 
-  .slider--section input[type=range] {
+  input[type=range] {
     width: 180px;
+  }
+  
+  .video iframe {
+    width: 100%;
+    height: auto;
   }
   
   .about__video iframe {
@@ -307,5 +318,256 @@
   
   .gallery-thumbs .swiper-slide {
     width: 122px;
+  }
+  
+  .wrapper__block {
+    flex-wrap: wrap;
+  }
+
+  .wrapper__menu {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .acts__field--search,
+  .acts__search,
+  .acts__select {
+    width: 100%;
+  }
+  
+  .btn-more::before,
+  .btn-more::after {
+    width: 40px;
+  }
+  
+  .wrapper__column-wide {
+    width: @max-mobile;
+  }
+  
+  .article__list {
+    height: 480px;
+  }
+  
+  .article__layout {
+    margin-right: 10px;
+  }
+  
+  .article__table {
+    width: @max-mobile;
+    
+    td {
+      height: 55px;
+    }
+    
+    td:nth-child(2),
+    td:first-child {
+      width: 100px;
+    }
+  }
+  
+  .news__list--column,
+  .article__price {
+    width: @max-mobile;
+  }
+  
+  .banner--sidebar {
+    position: static;
+  }
+  
+  .wrapper__column {
+    width: @max-mobile;
+  }
+  
+  .news__picture--article {
+    height: 130px;
+  }
+  
+  .citation {
+    margin-left: 15px;
+    margin-right: 15px;
+    padding: 20px;
+  }
+  
+  .citation__source {
+    width: 200px;
+    bottom: -20px;
+  }
+  
+  .download {
+    flex-direction: column;
+  }
+  
+  .download__item {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .map iframe {
+    height: 200px;
+  }
+  
+  .social-share {
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+  
+  .comments__field {
+    padding: 20px;
+  }
+  
+  .comments__person {
+    flex-direction: column;
+  }
+  
+  .comments__info {
+    width: 100%;
+  }
+  
+  .sub-nav__link {
+    display: block;
+    
+    &::after {
+      display: none;
+    }
+  }
+  
+  .arxiv__form {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .acts__select--arxiv {
+    width: 160px;
+    margin-bottom: 20px;
+  }
+  
+  .arxiv__journal {
+    width: 280px;
+    height: 230px;
+    
+    img {
+      width: 100%;
+    }
+  }
+  
+  .news__list--book {
+    .news__item {
+      margin-right: 0;
+    }
+  }
+  
+  .about__input {
+    width: 100%;
+  }
+  
+  .address--redaction {
+    flex-direction: column;
+    margin-bottom: 40px;
+  }
+  
+  .project__item {
+    margin-right: 0;
+    
+    &--2017,
+    &--2016,
+    &--2015 {
+      width: 100%;
+    }
+  }
+  
+  .project__figure {
+    width: 100%;
+    height: 130px;
+
+    &--2016,
+    &--2015 {
+      width: 100%;
+      height: 130px;
+    }
+  }
+  
+  .project__img {
+    width: 100%;
+  }
+  
+  .article__table--variant tr,
+  .article__table--subsription tr {
+    th:first-child,
+    td:first-child {
+      max-width: 100px;
+      word-wrap: break-word;
+      padding-right: 5px;
+    }
+    
+    td {
+      height: 80px;
+    }
+  }
+  
+  .article__table--subsription td:nth-child(n+2) {
+    width: auto;
+  }
+  
+  .article__block--760 {
+    width: @max-mobile;
+  }
+  
+  .about__list {
+    height: 1200px;
+  }
+  
+  .about__item {
+    width: 50%;
+  }
+  
+  .banner__info {
+    max-width: @max-mobile;
+    left: 0;
+  }
+  
+  .banner__info--part {
+    width: 100%;
+    left: 50%;
+  }
+  
+  .banner__name {
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: normal;
+    border-bottom: none;
+  }
+  
+  .banner__contact,
+  .banner__phone {
+    font-size: 14px;
+    line-height: 17px;
+    padding-top: 0;
+    background-image: none;
+    margin: 0;
+  }
+  
+  .banner__block {
+    width: 50%;
+  }
+  
+  .banner__list {
+    display: none;
+  }
+  
+  .banner__info--wide .banner__description,
+  .banner__info--wide .banner__description span {
+    margin: 0;
+    font-size: 10px;
+    line-height: 1.1;
+  }
+  
+  .banner__info--wide .banner__description:nth-of-type(2) {
+    display: none;
+  }
+  
+  .banner__right {
+    max-width: 200px;
+    top: 70%;
+    right: 40px;
   }
 }
